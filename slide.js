@@ -1,5 +1,5 @@
-const imgs = document.getElementById("img");
-const img = document.querySelectorAll(".container img");
+const imgs = document.getElementById("carrosel");
+const img = document.querySelectorAll(".container-teste div");
 
 let idx = 0;
 
@@ -10,7 +10,7 @@ function carrosel(){
         idx = 0;
     }
 
-    imgs.style.transform = `translateX(${-idx * 420}px)`;
+    imgs.style.transform = `translateX(${-idx * 540}px)`;
 }
 
 setInterval(carrosel, 4000);

@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Martins</title>
+
     <script src="https://kit.fontawesome.com/1d20bd8d20.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="home">
-        <div class="titulo">
-            <h4>Ismael <span>Martins</span></h4>
-            <h1>Desenvolvedor front-end e UI/UX designer </h1>
+    <div class="degrade">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div class="home">
+            <div class="titulo">
+                <h4>Ismael <span>Martins</span></h4>
+                <h1>Desenvolvedor front-end e UI/UX designer </h1>
+            </div>
+                <a class="botao-home" href="#sobre">Ver meu Trabalho<i class="fa-solid fa-arrow-right"></i></a>
         </div>
-            <button class="botao-home">Ver meu Trabalho</button>
     </div>
-
         <header>
             <div class="menu">
                 <a href="#" class="logo">Martins</a>
@@ -31,10 +37,10 @@
                 <nav class="menu-navbar">
                     <ul class="list">
                         <li><a href="#" class="links">Inicio</a></li>
-                        <li><a href="#" class="links">Sobre</a></li>
-                        <li><a href="#" class="links">Projetos</a></li>
-                        <li><a href="#" class="links">skills</a></li>
-                        <li><a href="#" class="links">Contato</a></li>
+                        <li><a href="#sobre" class="links">Sobre</a></li>
+                        <li><a href="#skills" class="links">Skills</a></li>
+                        <li><a href="#portfolio" class="links">Projetos</a></li>
+                        <li><a href="#contato" class="links">Contato</a></li>
                     </ul>
                 </nav>
             </div>
@@ -42,45 +48,64 @@
         
         <main>
             <div class="main">
-                <div class="sobre">
-                    <div class="sobre-mim-container"><h2 class="sobre-mim">sobre</h2></div>
-                    <div class="hexa-principal">  
-                    <div class="hexagono-descricao">
-                            <div>
-                                <img src="imgs/hexagono.png" alt="Desenvolvedor" class="hexagono">
-                                <div class="quem">Quem é esse cara?</div>
-                                <div class="quem-descricao">I'm a Front-End Developer for ChowNow in Los Angeles, CA.<br>
-                                    I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
-                                    Let's make something special.</div>
-                            </div>
-                        </div>  
-                    </div>    
-                </div> <!--Sobre-->
+                <div class="sobre" id="sobre">
 
-                <div class="skills">   
-                    <div class="skills-title"><h2>skills</h2></div>
+                    <div class="centralizar">
+                        <div class="box">
+                            <div class="circulo">
+                                <div class="text">
+                                    <h1>Ismael Martins</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quos. Debitis labore ad aliquid cupiditate atque a sed libero provident ipsam! Numquam deserunt soluta doloremque id delectus dicta quas eaque?</p>
+                                    <a href="#" class="btn">Saiba mais</a>
+                                </div>
+                            </div>
+                
+                            <img src="imgs/hexagono.png" alt="">
+                        </div>
+                    </div>
+                    <!-- <div class="sobre-mim-container"><h2 class="sobre-mim">sobre</h2></div>
+                    <div class="hexa-principal">  
+                        <div class="hexagono-descricao">
+                                <div>
+                                    <img src="imgs/hexagono.png" alt="Desenvolvedor" class="hexagono">
+                                    <div class="quem">Quem é esse cara?</div>
+                                    <div class="quem-descricao">I'm a Front-End Developer for ChowNow in Los Angeles, CA.<br>
+                                        I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
+                                        Let's make something special.</div>
+                                </div>
+                        </div>  
+                    </div>     -->
+                </div> <!--Sobre-->
+                <div class="skills" id="skills">   
+                    <div class="skills-title">
+                        <h2>skills</h2>
+                    </div>
                     <div class="coluna-main">
                         <div class="coluna-centralizada">
                             <div class="primeira-coluna">
                                 <i class="fa-solid fa-palette"></i>
                                 <h3 class="colunm-title"> Designer </h3>
-                                <p class="colunm-p"> Valorizo uma estrutura simples <br>e padrões de designs limpos.</p>
+                                <p class="colunm-p"> Valorizo uma estrutura simples <br>e padrões de designs limpos e interações ponderadas.</p>
 
                                 <p class="colunm-p2">Coisas que gosto de fazer:</p>
 
-                                <p class="colunm-p">UX, UI Responsive Web, Apps</p>
+                                <p class="colunm-p">UX, UI, Responsive WebSite e Apps Multiplataforma</p>
 
                                 <p class="colunm-p2">Designer Ferramentas:</p>
 
                                 <p class="colunm-p">Photoshop <br><br> Ilustrator <br><br> LightRoom <br><br> Visão <br><br> Papel e caneta</p>
                             </div>
-                            <div class="coluna"><i class="fa-solid fa-code"></i>
-                            <h3>Dev Skills</h3></div>
+                            <div class="coluna">
+                                <i class="fa-solid fa-code"></i>
+                            <h3 class="colunm-title">Dev Skills</h3> <p class="colunm-p">Tenho como principal objetivo <br> a qualidade do código, seguindo o padrão <br> do mercado.</p> <p class="colunm-p2">Linguagens e Tecnologias:</p> <p class="colunm-p">HTML, CSS, JavaScript, ReactJs, PHP, TypeScript e SQL</p> <p class="colunm-p2">Ferramentas e bibliotecas:</p> <p class="colunm-p">BootStrap <br> <br>
+                            GIT/GitHub <br> <br> Teste de Software <br> <br>Terminal </p> 
+                            </div>
                             <div class="coluna"><i class="fa-solid fa-book-open-reader"></i>
-                            <h3>Experience</h3></div>
+                            <h3 class="colunm-title">Experience</h3> <p class="colunm-p">Com 1 ano de Experiência, desenvolvi <br> diversos projetos que podem ser <br> acessado no meu perfil do <a class="git" href="#"> GITHub</a>.</p> <p class="colunm-p2">Experiêncas:</p> <p class="colunm-p">Exp com Designer Responsivo, <br> SPAs e Arquitetura Rest</p> <p class="colunm-p2">Dev Stats</p> <p class="colunm-p"> 1 ano de Experiência<br><br> 5 Projetos Prontos<br><br> </p></div>
                         </div>
                     </div>
-                    <!--
+                    <!--     IMPLEMENTAR FUTURAMENTE 
+                        
                         <img src="imgs/icon-javascript.png" alt="" class="skills-logo-up">
                         <img src="imgs/logo-html-5-2048.png" alt="" class="skills-logo-up">
                         <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png" alt="" class="skills-logo-up">
@@ -92,20 +117,87 @@
                     -->
                 </div> <!-- Skills -->
 
-                <div class="mainSlide">
-                    <div class="carrosel">
-                        <div class="container" id="img">
-                            <img src="imgs/1.jpg" alt="">
-                            <img src="imgs/2.jpg" alt="">
-                            <img src="imgs/3.jpg" alt="">
-                            <img src="imgs/4.jpg" alt="">
+                <div class="main-slide">
+                    <div class="carrosel-container">
+                        <h3 class="titulo-slide">Diferenciais</h3>
+                        <div class="container-teste" id="carrosel">
+                            <div class="primeira">
+                                <i class="fa-solid fa-code"></i>
+                                <h2>Clean Code</h2>
+                                <p>sou Bullas Attekita, desenvolvedora de software entusiasta em UX. Especialista em Aplicativos e Games  com mais de 10 anos de experiência em mídias interativas. Possuo experiência</p>
+                            </div>
+                            <div class="segunda">
+                                <i class="fa-solid fa-user-gear"></i>
+                                <h2>Suporte</h2>
+                                <p>Meus clientes tem direito a 6 meses de suporte caso o software apresente problemas</p>
+                            </div>
+                            <div class="terceira">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                <h2>Responsividade</h2>
+                                <p>Meus layouts funcionarão em qualquer tipo de dispositivo, grande ou pequeno, tendo como principal objetivo a experiência do usuário</p>
+                            </div>
+                            <div class="quarta">
+                                <i class="fa-solid fa-lightbulb"></i>
+                                <h2>Intuitivo</h2>
+                                <p>Forte prefência por experiência do usuário Intuitivas e dinâmicas com interface limpa e fácil de usar </p>
+                            </div>
+                        </div>
+                    </div> <!-- Primeiro Slide -->
+                    <div class="carrosel-container">
+                        <h3 class="titulo-slide">Diferenciais</h3>
+                        <div class="container-teste2" id="carrosel2"> <!-- OUTRO ID E CLASS -->
+                            <div class="primeira">
+                                <i class="fa-solid fa-code"></i>
+                                <h2>Clean Code</h2>
+                                <p>sou Bullas Attekita, desenvolvedora de software entusiasta em UX. Especialista em Aplicativos e Games  com mais de 10 anos de experiência em mídias interativas. Possuo experiência</p>
+                            </div>
+                            <div class="segunda">
+                                <i class="fa-solid fa-user-gear"></i>
+                                <h2>Suporte</h2>
+                                <p>Meus clientes tem direito a 6 meses de suporte caso o software apresente problemas</p>
+                            </div>
+                            <div class="terceira">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                <h2>Responsividade</h2>
+                                <p>Meus layouts funcionarão em qualquer tipo de dispositivo, grande ou pequeno, tendo como principal objetivo a experiência do usuário</p>
+                            </div>
+                            <div class="quarta">
+                                <i class="fa-solid fa-lightbulb"></i>
+                                <h2>Intuitivo</h2>
+                                <p>Forte prefência por experiência do usuário Intuitivas e dinâmicas com interface limpa e fácil de usar </p>
+                            </div>
                         </div>
                     </div>
-                </div> <!--Main Slide-->
+                </div><!--Main Slide-->
 
-                <div class="projetos">
-                    <div class="projetos-container"><h2 class="projetos-title">Projetos</h2></div>
+                <div class="projetos" id="portfolio">
+                    <div class="projetos-container"><h2 class="projetos-title">Portfólio</h2></div>
                     <div class="projeto-lista">
+                        <div class="card">
+                            <div class="card-content">
+                                <h2>01</h2>
+                                <h3>Card um</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam et, dolor delectus numquam nulla ut vel perferendis sapiente possimus enim non, hic consequuntur eligendi eum odit qui repudiandae eius! Numquam!</p>
+                                <a href="#" class="a-black">Mais informações</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <h2>01</h2>
+                                <h3>Card um</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam et, dolor delectus numquam nulla ut vel perferendis sapiente possimus enim non, hic consequuntur eligendi eum odit qui repudiandae eius! Numquam!</p>
+                                <a href="#" class="a-black">Mais informações</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <h2>01</h2>
+                                <h3>Card um</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam et, dolor delectus numquam nulla ut vel perferendis sapiente possimus enim non, hic consequuntur eligendi eum odit qui repudiandae eius! Numquam!</p>
+                                <a href="#" class="a-black">Mais informações</a>
+                            </div>
+                        </div>
+                    <!--
                         <div class="projeto">
                             <img src="imgs/casa1.jpg" alt="">
                         </div>
@@ -130,20 +222,34 @@
                             <img src="imgs/casa6.jpg" alt="">
                         </div>
                     </div>
+                -->
                 </div> <!--Projetos-->
 
-                <div class="portfolio">
-                </div>
-
-                <div class="contato">
-                </div>
-            </div>
+            </div> <!--Main-->
         </main>
-
         <footer>
-        </footer>
+            <div class="contato" id="contato">
+                    <div class="contato-title"><h2>Fale Comigo</h2></div>
 
+                    <p class="form-p">Resta alguma dúvida ou Vamos trabalhar juntos?</p>
+                    <form action="" method="post" class="form">
+                        <div class="container-input">
+                        <input type="email" name="username" placeholder="Nome" class="input">
+                        </div>
+                        <div>
+                        <input type="password" name="senha" placeholder="Seu email" class="input">
+                        </div>
+                        <div>
+                            <textarea name="texto-de-contato" id="" cols="30" rows="10" placeholder="Sua mensagem" class="input"></textarea>
+                        </div>
+                        <div class="container-btn-form">
+                        <button class="footer-btn">Enviar</button>
+                        </div>
+                    </form>
+            </div>
+        </footer>
         <script src="mobile.js"></script>
         <script src="slide.js"></script>
+        <script src="slide2.js"></script>
 </body>
 </html>
