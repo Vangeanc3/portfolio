@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+/* TITULOS */
+
+.titulo-padrao {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-padrao h2 {
+    font-size: 30pt;
+    margin: 50px auto 0 auto;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;  
+}
+
+.titulo-linha{
+    margin-top: 5px;
+    display: flex;
+    width: 70px;
+    height: 4px;
+    background: #090a0f;
+}
+
+.line{
+    width: 150px;
+}
+
+/* KEY FRAMES */
+
+@keyframes animStar {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-2000px);
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+     to {
+        opacity: 1;
+        transform: translateX(0);
+     }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes foi-mostrado{
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
+/* -- Media Queries --   */
+
+@media (max-width: 1289px){
+    .projetos{
+        height: 125vh;
+    }
+}
+
+@media (max-width: 900px){
+    .titulo{
+        text-align: center;
+    }
+}

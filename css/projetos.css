@@ -1,0 +1,135 @@
+/* PROJETOS PORTFÓLIO */
+.projetos {
+    height: 100vh;
+}
+
+.projetos-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.projetos-title {
+    text-align: center;
+    font-size: 30pt;
+    text-transform: uppercase;
+    margin: 50px auto 0 auto;
+    border-bottom: 4px solid black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10vh;
+}
+
+.projetos-card-main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projetos-card{
+    width: 370px;
+    height: 370px;
+    border: solid black 1px;
+    margin: 25px 30px 0 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: 1s;
+    background-image: url(../imgs/quadrado-card.webp);
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+}   
+
+.projetos-card-btn{
+    width: 100px;
+    padding: 5px;
+    margin-bottom: 30px;
+    opacity: 0;
+    cursor: pointer;
+    transform: translateY(50px);
+    transition: 0.5s;
+    background: black;
+    color: white;
+    border: white solid 1px;
+}
+
+.projetos-card:hover{
+    filter: grayscale(0%);
+    background-size: 115%;
+    transition: 2s;
+}
+
+.projetos-card:hover button{
+    opacity: 1;
+    transition: 1s;
+    transform: translateY(0px);
+}
+
+.projetos-card-btn:hover{
+    background: white;
+    color: black;
+}
+
+
+/*
+.projeto {
+    width: 28vw;
+    height: 40vh;
+    margin: 12px;
+}
+
+.projeto img {
+    width: 28vw;
+    height: 40vh;
+    border-radius: 20px;
+}
+*/
+.card{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px black;
+    border-radius: 15px;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-content{
+    padding: 20px;
+    transform: translateY(100px);
+    transition: 0.5s;
+    text-align: center;
+    opacity: 0;
+}
+
+.card:hover .card-content{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card .card-content h3{
+    font-size: 1.8em;
+    z-index: 1;
+}
+
+.card .card-content p{
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.card .card-content a{
+    margin-top: 50px;
+    color: black;
+}
+/* FIM PROJETOS PORFÓLIO */

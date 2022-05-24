@@ -1,0 +1,193 @@
+
+/* ===== SKILLS ===== */
+.skills {
+    background: whitesmoke;
+    height: 130vh;
+    width: 100%;
+    text-align: center;
+}
+
+.coluna-main {
+    height: 105vh;
+    max-width: 84vw;
+    background: #fff;
+    margin: 50px auto 0 auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px black;
+}
+
+.coluna-centralizada {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primeira-coluna {
+    height: 100%;
+    width: calc(100% / 3);
+}
+
+.primeira-coluna i {
+    font-size: 40pt;
+    margin-top: 50px;
+}
+
+.coluna i {
+    font-size: 40pt;
+    margin-top: 50px;
+}
+
+.coluna {
+    height: 100%;
+    width: calc(100% / 3);
+    border-left: 1px solid rgb(207, 207, 207);
+}
+
+.colunm-title {
+    margin-top: 30px;
+    font-size: 20pt;
+}
+
+.colunm-p {
+    font-size: 15pt;
+    margin-top: 30px;
+    vertical-align: inherit;
+}
+
+.colunm-p2 {
+    font-size: 13pt;
+    margin-top: 30px;
+    vertical-align: inherit;
+    font-weight: 700;
+    color: #7510F7;
+    font-family: "Raleway";
+}
+
+.git {
+    color: red;
+    text-decoration: none;
+}
+
+.skills-logo-up {
+    height:100px;
+    width: 100px;
+    border-radius: 20px;
+    margin: 20vh 10px 0px 40px;
+}
+
+.skills-logo {
+    height:100px;
+    width: 100px;
+    border-radius: 20px;
+    margin: 10px 10px 10px 40px;
+    position: relative;
+    bottom: 5vh;
+}
+
+.skills div h2 {
+    font-size: 24pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* ===== FIM SKILLS ===== */
+
+/* ===== SLIDER ===== */
+.main-slide {
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: whitesmoke;
+}
+
+.carrosel-container {
+    overflow: hidden;
+    height: 250px;
+    width: 540px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px black;
+}
+
+.container-teste {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+    transform: translateX(0);
+}
+
+.container-teste2 {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+    transform: translateX(0);
+}
+
+.container-teste2 div {
+    object-fit: cover;
+    height: 250px;
+    width: 540px;
+}
+
+.container-teste div {
+    object-fit: cover;
+    height: 250px;
+    width: 540px;
+}
+
+.primeira, .segunda, .terceira, .quarta {
+    display: flex;
+    flex-direction: row; 
+}
+
+.primeira h2, .segunda h2, .terceira h2, .quarta h2 {
+    width: 540px;
+    margin: 30px 0 0 0;
+}
+
+.primeira p {
+    position: absolute;
+    top: 30%;
+    left: 150px;
+    width: 360px;
+    font-size: 13pt;
+}
+
+.segunda p {
+    position: absolute;
+    transform: translateX(540px);
+    top: 30%;
+    left: 150px;
+    width: 360px;
+    font-size: 13pt;
+}
+
+.terceira p {
+    position: absolute;
+    transform: translateX(1040px);
+    top: 30%;
+    left: 150px;
+    width: 360px;
+    font-size: 13pt;
+}
+
+.quarta p {
+    position: absolute;
+    transform: translateX(1580px);
+    top: 30%;
+    left: 150px;
+    width: 360px;
+    font-size: 13pt;
+}
+
+.primeira i, .segunda i, .terceira i, .quarta i{
+    font-size: 60pt;
+    color: #7510F7;
+    margin: 70px 25px 0px 25px;
+}
+
+.titulo-slide {
+    letter-spacing: 4px;
+    font-size: 10pt;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+} /* SLIDE FIM */ 

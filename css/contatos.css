@@ -1,0 +1,73 @@
+/* Footer */ 
+
+.contato {
+    border-top: 4px solid #04c2c9;
+    height: 100vh;
+    background: #252934;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-title {
+    width: 100%;
+}
+
+.contato-title h2 {
+    margin-top: 50px;
+    font-size: 40pt;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500; 
+    line-height: 1.2; 
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.form-p {
+    color: #04c2c9;
+    vertical-align: inherit;
+    font-weight: 500;
+    margin-top: 40px;
+    font-size: 13pt;
+    text-align: center;
+}
+
+.container-input {
+    margin: 20px 0 0px 0;
+}
+
+.input {
+    color: #fff;
+    width: 40vw;
+    background: #1e242c;
+    border: none;
+    box-sizing: border-box;
+    font-size: 12pt;
+    padding: 10px 15px;
+    margin-bottom: 3px;
+}
+
+.container-btn-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-btn {
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    background: transparent;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.footer-btn:hover{
+    background: #04c2c9;
+    transition: 2s;
+}
+
+.form {
+    margin-top: 50px;
+    text-align: center;
+}
