@@ -579,12 +579,12 @@
     height: 100px;
     margin: 0 auto 0 auto;
     animation: foi-mostrado 2s ease-in-out forwards;
-    
+    font-size: 1.6rem;    
 }
 
 .titulo h1 {
     letter-spacing: 3px;
-    font-size: 30pt;
+    font-size: 4rem;
 }
 
 .titulo h4 {
@@ -598,7 +598,6 @@
 }
 
 .botao-home {
-    width: 190px;
     padding: 10px;
     margin: 45vh auto 0 auto;
     background-color: #1a1717;
