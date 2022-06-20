@@ -13,6 +13,8 @@ vw - Viewport Width
 
 Textos fixos
 1px = 0.75pt 
+4px = 3pt
+8px = 6pt
 16px = 12pt
 
 Texto fluidos
