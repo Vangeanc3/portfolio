@@ -93,9 +93,11 @@
     justify-content: space-around;
     align-items: center;
     background: whitesmoke;
+    flex-wrap: wrap;
 }
 
 .carrosel-container {
+    margin: 0 30px 0 30px;
     overflow: hidden;
     height: 250px;
     width: 540px;
@@ -186,3 +188,21 @@
     text-transform: uppercase;
     margin-top: 10px;
 } /* SLIDE FIM */ 
+
+@media (max-width: 1200px){
+    .carrosel-container{
+        margin-bottom: 5rem;
+    }
+
+    .carrosel-container:nth-child(1){
+        margin-top: 5rem;
+        
+    }
+}
+
+@media (max-width: 600px){
+    .primeira p, .segunda p, .terceira p, .quarta p{
+        width: 320px;
+        font-size: 1.7rem;
+    }
+}
