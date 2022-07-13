@@ -90,11 +90,6 @@ html {
 }
 /* -- Media Queries --   */
 
-@media (max-width: 1289px){
-    .projetos{
-        height: 125vh;
-    }
-}
 
 @media (max-width: 900px){
     .titulo{

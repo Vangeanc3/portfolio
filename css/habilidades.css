@@ -29,12 +29,12 @@
 }
 
 .primeira-coluna i {
-    font-size: 40pt;
+    font-size: 5.3rem;
     margin-top: 50px;
 }
 
 .coluna i {
-    font-size: 40pt;
+    font-size: 5.3rem;
     margin-top: 50px;
 }
 
@@ -46,17 +46,17 @@
 
 .colunm-title {
     margin-top: 30px;
-    font-size: 20pt;
+    font-size: 2.5rem;
 }
 
 .colunm-p {
-    font-size: 15pt;
+    font-size: 2rem;
     margin-top: 30px;
     vertical-align: inherit;
 }
 
 .colunm-p2 {
-    font-size: 13pt;
+    font-size: 1.7rem;
     margin-top: 30px;
     vertical-align: inherit;
     font-weight: 700;
@@ -84,12 +84,6 @@
     position: relative;
     bottom: 5vh;
 }
-
-.skills div h2 {
-    font-size: 24pt;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
 /* ===== FIM SKILLS ===== */
 
 /* ===== SLIDER ===== */
@@ -99,9 +93,11 @@
     justify-content: space-around;
     align-items: center;
     background: whitesmoke;
+    flex-wrap: wrap;
 }
 
 .carrosel-container {
+    margin: 0 30px 0 30px;
     overflow: hidden;
     height: 250px;
     width: 540px;
@@ -149,7 +145,7 @@
     top: 30%;
     left: 150px;
     width: 360px;
-    font-size: 13pt;
+    font-size: 1.7rem;
 }
 
 .segunda p {
@@ -158,7 +154,7 @@
     top: 30%;
     left: 150px;
     width: 360px;
-    font-size: 13pt;
+    font-size: 1.7rem;
 }
 
 .terceira p {
@@ -167,7 +163,7 @@
     top: 30%;
     left: 150px;
     width: 360px;
-    font-size: 13pt;
+    font-size: 1.7rem;
 }
 
 .quarta p {
@@ -176,11 +172,11 @@
     top: 30%;
     left: 150px;
     width: 360px;
-    font-size: 13pt;
+    font-size: 1.7rem;
 }
 
 .primeira i, .segunda i, .terceira i, .quarta i{
-    font-size: 60pt;
+    font-size: 8rem;
     color: #7510F7;
     margin: 70px 25px 0px 25px;
 }
@@ -192,3 +188,21 @@
     text-transform: uppercase;
     margin-top: 10px;
 } /* SLIDE FIM */ 
+
+@media (max-width: 1200px){
+    .carrosel-container{
+        margin-bottom: 5rem;
+    }
+
+    .carrosel-container:nth-child(1){
+        margin-top: 5rem;
+        
+    }
+}
+
+@media (max-width: 600px){
+    .primeira p, .segunda p, .terceira p, .quarta p{
+        width: 320px;
+        font-size: 1.7rem;
+    }
+}

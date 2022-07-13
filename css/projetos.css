@@ -1,6 +1,6 @@
 /* PROJETOS PORTFÓLIO */
 .projetos {
-    height: 100vh;
+    height: 80vh;
 }
 
 .projetos-container {
@@ -27,6 +27,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 5vh;
 }
 
 .projetos-card{
@@ -138,4 +139,16 @@
     width: 60vw;
     height: 80vh;
     background: white;
+}
+/* -- Media Queries --   */
+@media (max-width: 1289px){
+    .projetos{
+        height: 120vh;
+    }
+}
+
+@media (max-width: 859px){
+    .projetos{
+        height: 160vh;
+    }
 }
