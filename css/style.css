@@ -86,9 +86,3 @@ html {
 }
 /* -- Media Queries --   */
 
-
-@media (max-width: 900px){
-    .titulo{
-        text-align: center;
-    }
-}

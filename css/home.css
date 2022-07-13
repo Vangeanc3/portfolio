@@ -624,4 +624,21 @@
     transform: rotate(90deg);
     transition: 0.5s;
 }
-/* FIM HOME */
+/* -- FIM HOME --  */
+/* -- Media Queries --   */
+
+
+@media (max-width: 900px){
+    .titulo{
+        text-align: center;
+    }
+}
+
+@media (max-width: 510px){
+    .titulo h1{
+        font-size: 3rem 
+    }
+    .titulo h4{
+        margin-bottom: 1vh;
+    }
+}
