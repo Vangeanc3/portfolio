@@ -189,6 +189,18 @@
     margin-top: 10px;
 } /* SLIDE FIM */ 
 
+/* MEDIA QUERIES */
+
+@media (max-height: 700px){
+    .coluna-main{
+        height: 120vh;
+    }
+
+    .skills{
+        height: 150vh;
+    }
+}
+
 @media (max-width: 1200px){
     .carrosel-container{
         margin-bottom: 5rem;
@@ -197,6 +209,22 @@
     .carrosel-container:nth-child(1){
         margin-top: 5rem;
         
+    }
+}
+
+@media (max-width: 950px){
+    .coluna-main{
+        padding: 40px;
+    }
+    .primeira-coluna{
+        padding-right: 30px;
+    }
+    .coluna:nth-child(2){
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .coluna:nth-child(3){
+        padding-left: 30px;
     }
 }
 
