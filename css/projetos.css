@@ -45,7 +45,15 @@
     background-repeat: no-repeat;
     background-position: center;
     filter: grayscale(100%);
-}   
+}
+
+.projetos-card:nth-child(2){
+    background-image: url(../imgs/REAcreative.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #22827e;
+}
 
 .projetos-card-btn{
     width: 100px;
