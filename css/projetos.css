@@ -152,14 +152,20 @@
 /* FIM MODAL */
 
 /* -- Media Queries --   */
+@media (max-height: 700px){
+    .projetos{
+        height: 100vh;
+    }
+}
+
 @media (max-width: 1289px){
     .projetos{
-        height: 120vh;
+        height: 180vh;
     }
 }
 
 @media (max-width: 859px){
     .projetos{
-        height: 160vh;
+        height: 250vh;
     }
 }
