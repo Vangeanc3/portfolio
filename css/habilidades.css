@@ -8,7 +8,7 @@
 }
 
 .coluna-main {
-    height: 105vh;
+    height: 100vh;
     max-width: 84vw;
     background: #fff;
     margin: 50px auto 0 auto;
@@ -191,7 +191,7 @@
 
 /* MEDIA QUERIES */
 
-@media (max-height: 700px){
+@media (max-height: 750px){
     .coluna-main{
         height: 120vh;
     }
@@ -214,7 +214,8 @@
 
 @media (max-width: 950px){
     .coluna-main{
-        padding: 40px;
+        padding-right: 40px;
+        padding-left: 40px;
     }
     .primeira-coluna{
         padding-right: 30px;
@@ -226,11 +227,35 @@
     .coluna:nth-child(3){
         padding-left: 30px;
     }
+    .colunm-p{
+        font-size: 1.6rem;
+    }
 }
 
 @media (max-width: 600px){
     .primeira p, .segunda p, .terceira p, .quarta p{
         width: 320px;
         font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 768px){
+    .primeira-coluna{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .coluna{
+        display: none;
+    }
+    .coluna:nth-child(2){
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .coluna:nth-child(3){
+        padding-left: 0;
+    }
+    .coluna-main{
+        padding-left: 0;
+        padding-right: 0;
     }
 }
