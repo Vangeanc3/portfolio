@@ -64,6 +64,22 @@
     font-family: "Raleway";
 }
 
+.colunm-btn, .colunm-btn2, .colunm-btn3{
+    margin: 70px auto 0px auto;
+    padding: 6px 10px 6px 10px;
+    background-color: #7510F7;
+    color: #fff;
+    border: none;
+    display: none;
+}
+
+.colunm-ativo{
+    display: block;
+}
+.colunm-desativo{
+    display: none;
+}
+
 .git {
     color: red;
     text-decoration: none;
@@ -244,7 +260,11 @@
         width: 100%;
         padding-right: 0px;
     }
-    .coluna{
+    .segunda-coluna{
+        display: none;
+        border: none;
+    }
+    .terceira-coluna{
         display: none;
     }
     .coluna:nth-child(2){
@@ -257,5 +277,8 @@
     .coluna-main{
         padding-left: 0;
         padding-right: 0;
+    }
+    .colunm-btn, .colunm-btn2, .colunm-btn3{
+        display: block;
     }
 }

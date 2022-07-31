@@ -20,3 +20,9 @@ Textos fixos
 Texto fluidos
 em - multiplicado pelo pai
 rem - multiplicado pelo root
+
+## Variaveis
+
+Add variáveis no css ex:
+
+--
