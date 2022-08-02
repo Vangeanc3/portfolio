@@ -1,22 +1,26 @@
-let next1 = document.querySelector(".colunm-btn")
-let next2 = document.querySelector(".colunm-btn2")
-let next3 = document.querySelector(".colunm-btn2")
+class Next{
+    constructor(btn, colunm, colunm2, colunm3){
+        this.botao = document.querySelectorAll(btn)
+        this.coluna = document.querySelector(colunm)
+        this.coluna2 = document.querySelector(colunm2)
+        this.coluna3 = document.querySelector(colunm3)
+    }
 
-let primeiraColunm = document.querySelector(".primeira-coluna")
-let segundaColunm = document.querySelector(".segunda-coluna")
-let terceiraColunm = document.querySelector(".terceira-coluna")
+    clique(){
+        this.botao[0].onclick = () =>{
+            this.coluna.style.display = "none"
+            this.coluna2.style.display = "block"
+        }
+        this.botao[1].onclick = () =>{
+            this.coluna2.style.display = "none"
+            this.coluna3.style.display = "block"
+        }
+        this.botao[2].onclick = () =>{
+            this.coluna3.style.display = "none"
+            this.coluna.style.display = "block"
+        }
+    }
+}
 
-next1.addEventListener("click", () => {
-    primeiraColunm.style.display = "none"
-    segundaColunm.style.display = "block"
-})
-
-next2.addEventListener("click", () => {
-    segundaColunm.style.display = "none"
-    terceiraColunm.style.display = "block"
-})
-
-next3.addEventListener("click", () => {
-    terceiraColunm.style.display = "none"
-    primeiraColunm.style.display = "block"
-})
+const next1 = new Next(".colunm-btn", ".primeira-coluna", ".segunda-coluna", ".terceira-coluna") 
+next1.clique()

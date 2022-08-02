@@ -266,6 +266,7 @@
     }
     .terceira-coluna{
         display: none;
+        border: none;
     }
     .coluna:nth-child(2){
         padding-left: 0;
