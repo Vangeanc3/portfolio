@@ -634,11 +634,21 @@
     }
 }
 
-@media (max-width: 510px){
+@media (max-width: 550px){
     .titulo h1{
         font-size: 3rem 
     }
     .titulo h4{
         margin-bottom: 1vh;
+    }
+}
+
+@media (max-width: 450px){
+    .titulo h1{
+        font-size: 2.4rem;
+    }
+
+    .home{
+        background-size: 150%;
     }
 }
