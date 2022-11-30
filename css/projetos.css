@@ -1,7 +1,4 @@
 /* PROJETOS PORTFÓLIO */
-.projetos {
-    height: 80vh;
-}
 
 .projetos-container {
     text-align: center;
@@ -150,49 +147,3 @@
     background: white;
 }
 /* FIM MODAL */
-
-/* -- Media Queries --   */
-
-
-
-@media (min-width: 859px) and (max-width: 1024px){
-    .projetos{
-        height: 180vh;
-    }
-}
-
-@media (min-width: 425px) and (max-width: 859px){
-    .projetos{
-        height: 260vh;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 425px){
-    .projetos{
-        height: 260vh;
-    }
-}
-    
-@media (min-width: 0px) and (max-width: 320px){
-    .projetos{
-        height: 260vh;
-    }
-}
-
-@media (max-width: 500px) and (min-height: 700px) and (max-height: 800px){
-    .projetos{
-        height: 210vh;
-    }
-}
-
-@media (max-width: 500px) and (min-height: 800px) and (max-height: 900px){
-    .projetos{
-        height: 180vh;
-    }
-}
-
-@media (max-width: 500px) and (min-height: 900px) and (max-height: 1000px){
-    .projetos{
-        height: 160vh;
-    }
-}

@@ -2,7 +2,6 @@
 /* ===== SKILLS ===== */
 .skills {
     background: whitesmoke;
-    height: 130vh;
     width: 100%;
     text-align: center;
 }
@@ -96,7 +95,7 @@
 
 /* ===== SLIDER ===== */
 .main-slide {
-    min-height: 60vh;
+    margin-top: 5rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -204,16 +203,6 @@
 } /* SLIDE FIM */ 
 
 /* MEDIA QUERIES */
-
-@media (max-height: 750px){
-    .coluna-main{
-        height: 120vh;
-    }
-
-    .skills{
-        height: 150vh;
-    }
-}
 
 @media (max-width: 1200px){
     .carrosel-container{
