@@ -24,7 +24,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 5vh;
+    margin: 5vh 0 5vh 0;
 }
 
 .projetos-card{
@@ -103,9 +103,7 @@
 }
 
 .projetos-card:hover button{
-    opacity: 0;
-    transition: 1s;
-    transform: translateY(50px);
+    transition: .5s;
 }
 
 .projetos-card-btn:hover{
