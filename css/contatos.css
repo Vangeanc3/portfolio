@@ -50,6 +50,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-bottom: 3rem;
 }
 
 .footer-btn {
@@ -64,6 +65,7 @@
 .footer-btn:hover{
     background: #04c2c9;
     transition: 2s;
+    cursor: pointer;
 }
 
 .form {

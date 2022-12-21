@@ -83,7 +83,9 @@
     background-color: #7510F7;
     color: #fff;
     border: none;
+    border-radius: 6px;
     display: none;
+    margin-bottom: 5rem;
 }
 
 .git {
