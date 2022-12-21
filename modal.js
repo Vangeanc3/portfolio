@@ -23,10 +23,12 @@ btn3.addEventListener("click", () => {
 const None = (elemento) => {
    elemento.addEventListener("click", () => {
       elemento.style.display = "none";
+      document.querySelector("body").style.overflowY = "visible";
    })
 };
 
 const Flex = (elemento) => {
       elemento.style.display = "flex";
+      document.querySelector("body").style.overflowY = "hidden";
    }
 
