@@ -110,10 +110,13 @@
 }
 
 .sobre-mobile-p{
-    font-size: 1.6rem;
-    padding: 0 5rem 0 5rem;
-    text-align: center;
+    width: 90vw;
     transform: translateY(-3rem);
+}
+
+.sobre-mobile-p p{
+    font-size: 1.6rem;
+    text-align: center;
 }
 
 /* FIM SOBRE */ 
@@ -125,5 +128,11 @@
 
     .sobre-mobile-container{
         display: flex;
+    }
+}
+
+@media (max-width: 500px){
+    .sobre-mobile-p p{
+        font-size: 1.2;
     }
 }
