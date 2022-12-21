@@ -6,6 +6,8 @@
     justify-content: center;
     align-items: center;
     transition: 1s;
+    flex-direction: column;
+    margin-top: 1rem;
 }
 
 .box {
@@ -84,60 +86,53 @@
     letter-spacing: 2px;
 }
 
-
-
-/* 
-.sobre-mim-container {
-    display: flex;
-    width: 100%;
+.suporte-sobre{
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.sobre-mim {
-    font-size: 30pt;
-    text-transform: uppercase;
-    margin: 50px auto 0 auto;
-    border-bottom: 4px solid black;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-}
-
-.hexagono {
-    height: 400px;
-}
-
-.hexa-principal {
-    width: 100%;
-    display: flex;
+.sobre-mobile-container{
+    display: none;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.hexagono-descricao {
- max-width: 100%;
- width: 50vw;
- display: flex;
- justify-content: center;
- align-items: center;
- text-align: center;
- flex-wrap: wrap;
- margin-right: 50px;
+.sobre-mobile-img{
+    height: 35rem;
+    margin-right: 5rem;
 }
 
-.quem {
-    margin: auto auto 5px 25px;
-    position: relative;
-    bottom: 60px;
-    font-size: 18pt;
-    line-height: 24px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.sobre-mobile-h2{
+    font-size: 2.6rem;
+    transform: translateY(-6rem);
+}
+
+.sobre-mobile-p{
+    width: 90vw;
+    transform: translateY(-3rem);
+}
+
+.sobre-mobile-p p{
+    font-size: 1.6rem;
     text-align: center;
 }
 
-.quem-descricao {
-    position: relative;
-    bottom: 40px;
-    margin: 0 5vw;
-} */
-
 /* FIM SOBRE */ 
+
+@media (max-width: 900px){
+    .box, .suporte-sobre{
+        display: none;
+    }
+
+    .sobre-mobile-container{
+        display: flex;
+    }
+}
+
+@media (max-width: 500px){
+    .sobre-mobile-p p{
+        font-size: 1.2;
+    }
+}

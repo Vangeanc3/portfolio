@@ -61,8 +61,8 @@
 }
 
 .projetos-card:nth-child(3){
-    background-image: url(../imgs/CulturaDigital.png);
-    background-size: 80%;
+    background-image: url(../imgs/Cultura_Digital.png);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-color: whitesmoke;
@@ -97,7 +97,7 @@
 
 .projetos-card:nth-child(3):hover{
     filter: grayscale(0%);
-    background-size: 100%;
+    background-size: 110%;
     transition: 2s;
     cursor: pointer;
 }
