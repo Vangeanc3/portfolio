@@ -96,7 +96,7 @@ header {
        position: absolute;
        right: 0;
        top: 8vh;
-       width: 50vw;
+       width: 100vw;
        height: 92vh;
        background: #1a1717;
        display: flex;
