@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>Martins</title>
 
+    <link rel="shortcut icon" href="imgs/vangeanc3 2.png" type="image/x-icon">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="imgs/vangeanc3 2.png" type="image/x-icon">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
@@ -22,13 +24,12 @@
     <link rel="stylesheet" href="css/projetos.css">
     <link rel="stylesheet" href="css/contatos.css">
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-        defer></script>
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"defer></script>
     <script src="https://kit.fontawesome.com/1d20bd8d20.js" crossorigin="anonymous" defer></script>
+    <script src="js/main.js" defer></script>
     <script src="js/menu.js" defer></script>
     <script src="js/showcolunm.js" defer></script>
-    <script src="js/slide.js" defer></script>
-    <script src="js/slide2.js" defer></script>
     <script src="js/modal.js" defer></script>
 </head>
 
@@ -77,15 +78,17 @@
                         <div class="circulo">
                             <div class="text">
                                 <h1>Ismael Martins</h1>
-                                <p>Sou desenvolvedor Full-Stack. Atualmente sou estagiário no Banpará, com enfâse nas tecnologias da Microsoft: .NET Core e outras que 
-                                    poderá ver mais adiante. Tenho familiaridade com SPA's e construções de API's REST. Let's go work togheter?
+                                <p>Sou desenvolvedor Full-Stack. Atualmente sou estagiário no Banpará, com enfâse nas
+                                    tecnologias da Microsoft: .NET Core e outras que
+                                    poderá ver mais adiante. Tenho familiaridade com SPA's e construções de API's REST.
+                                    Let's go work togheter?
                                 </p>
                                 <a href="#" class="btn">Carregar Currículo</a>
                             </div>
                         </div>
                         <img src="imgs/hexagono.png" alt="">
                     </div>
-                    <h2 class="suporte-sobre">Passe o mouse em cima</h2> 
+                    <h2 class="suporte-sobre">Passe o mouse em cima</h2>
                     <!-- SOLUÇÕES PARA TELAS SUPERIOR A 900PX FIM -->
                     <div class="sobre-mobile-container">
                         <img src="imgs/sobre-img.png" alt="" class="sobre-mobile-img">
@@ -94,11 +97,12 @@
 
                         <div class="sobre-mobile-p">
                             <p>
-                            Sou desenvolvedor Full-Stack e atualmente estagiário no Banpará,
-                            com foco nas tecnologias da Microsoft: ASP.NET Core e outras tecnologias que
-                            poderá ver adiante. Tenho familiaridade com SPA's e construções de API's REST. <br> Let's go
-                            work togheter?
-                        </p>
+                                Sou desenvolvedor Full-Stack e atualmente estagiário no Banpará,
+                                com foco nas tecnologias da Microsoft: ASP.NET Core e outras tecnologias que
+                                poderá ver adiante. Tenho familiaridade com SPA's e construções de API's REST. <br>
+                                Let's go
+                                work togheter?
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -114,7 +118,8 @@
                         <div class="coluna">
                             <i class="fa-solid fa-palette"></i>
                             <h3 class="colunm-title"> Front Skills </h3>
-                            <p class="colunm-p limite-paragrafo"> Valorizo uma estrutura simples, padrões de designs limpos,
+                            <p class="colunm-p limite-paragrafo"> Valorizo uma estrutura simples, padrões de designs
+                                limpos,
                                 interações ponderadas, com foco na experiência do usuario.</p>
 
                             <p class="colunm-p2">Coisas que gosto de fazer:</p>
@@ -124,7 +129,8 @@
                                 <p class="colunm-p2">Designer Ferramentas:</p>
 
                                 <p class="colunm-p p-final">ReactJS <br><br> Blazor <br><br> React Native <br><br>Figma
-                                    <br><br>SASS</p>
+                                    <br><br>SASS
+                                </p>
                             </div>
                             <button class="colunm-btn">Next Skill</button>
                         </div>
@@ -164,70 +170,100 @@
                         </div>
                     </div>
                 </div>
-
-
                 <div class="main-slide">
-                    <div class="carrosel-container">
+                    <div class="glide carrosel">
                         <h3 class="titulo-slide">Diferenciais</h3>
-                        <div class="container-teste" id="carrosel">
-                            <div class="primeira">
-                                <i class="fa-solid fa-code"></i>
-                                <h2>Acessibilidade</h2>
-                                <p>
-                                </p>
-                            </div>
-                            <div class="segunda">
-                                <i class="fa-solid fa-user-gear"></i>
-                                <h2>Clean Code</h2>
-                                <p>Meus clientes tem direito a 6 meses de suporte, caso o software apresente problemas.
-                                </p>
-                            </div>
-                            <div class="terceira">
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                <h2>Escalabilidade</h2>
-                                <p>Meus layouts funcionarão em qualquer tipo de dispositivo, grande ou pequeno.</p>
-                            </div>
-                            <div class="quarta">
-                                <i class="fa-solid fa-lightbulb"></i>
-                                <h2>Intuitivo</h2>
-                                <p>Forte prefência por experiência de usuário Intuitivas e dinâmicas com interface limpa
-                                    e
-                                    fácil de usar.</p>
-                            </div>
+                        <div class="glide__track slide-container" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="primeira glide__slide">
+                                    <i class="fa-solid fa-code"></i>
+                                    <div>
+                                        <h2>Acessibilidade</h2>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="segunda glide__slide">
+                                    <i class="fa-solid fa-user-gear"></i>
+                                    <div>
+                                        <h2>Clean Code</h2>
+                                        <p>Meus clientes tem direito a 6 meses de suporte, caso o software apresente
+                                            problemas.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="terceira glide__slide">
+                                    <i class="fa-solid fa-user-gear"></i>
+                                    <div>
+                                        <h2>Responsividade</h2>
+                                        <p>Meus clientes tem direito a 6 meses de suporte, caso o software apresente
+                                            problemas.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="quarta glide__slide">
+                                    <i class="fa-solid fa-lightbulb"></i>
+                                    <div>
+                                        <h2>Intuitivo</h2>
+                                        <p>Forte prefência por experiência de usuário Intuitivas e dinâmicas com
+                                            interface limpa
+                                            e
+                                            fácil de usar.</p>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div> <!-- Primeiro Slide -->
-                    <div class="carrosel-container">
+                    <div class="glide2 carrosel">
                         <h3 class="titulo-slide">Diferenciais</h3>
-                        <div class="container-teste2" id="carrosel2">
+                        <div class="glide__track slide-container" data-glide-el="track">
                             <!-- OUTRO ID E CLASS -->
-                            <div class="primeira">
-                                <i class="fa-solid fa-code"></i>
-                                <h2>Front-end</h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam animi adipisci cumque
-                                    explicabo quisquam, id eius non amet natus ipsum vitae cum maxime atque repellat
-                                    quia
-                                    mollitia blanditiis porro beatae.</p>
-                            </div>
-                            <div class="segunda">
-                                <i class="fa-solid fa-user-gear"></i>
-                                <h2>Back-end</h2>
-                                <p>Meus clientes tem direito a 6 meses de suporte caso o software apresente problemas
-                                </p>
-                            </div>
-                            <div class="terceira">
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                <h2>Devops</h2>
-                                <p>Meus layouts funcionarão em qualquer tipo de dispositivo, grande ou pequeno, tendo
-                                    como
-                                    principal objetivo a experiência do usuário</p>
-                            </div>
-                            <div class="quarta">
-                                <i class="fa-solid fa-lightbulb"></i>
-                                <h2>Full-Stack</h2>
-                                <p>Forte prefência por experiência do usuário Intuitivas e dinâmicas com interface limpa
-                                    e
-                                    fácil de usar.</p>
-                            </div>
+                            <ul class="glide__slides">
+                                <li class="primeira glide__slide">
+                                    <i class="fa-solid fa-code"></i>
+                                    <div>
+                                        <h2>Front-end</h2>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam animi
+                                            adipisci
+                                            cumque
+                                            explicabo quisquam, id eius non amet natus ipsum vitae cum maxime atque
+                                            repellat
+                                            quia
+                                            mollitia blanditiis porro beatae.</p>
+                                    </div>
+                                </li>
+                                <li class="segunda glide__slide">
+                                    <i class="fa-solid fa-user-gear"></i>
+                                    <div>
+                                        <h2>Back-end</h2>
+                                        <p>Meus clientes tem direito a 6 meses de suporte caso o software apresente
+                                            problemas
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="terceira glide__slide">
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    <div>
+                                        <h2>Devops</h2>
+                                        <p>Meus layouts funcionarão em qualquer tipo de dispositivo, grande ou
+                                            pequeno,
+                                            tendo
+                                            como
+                                            principal objetivo a experiência do usuário</p>
+                                    </div>
+                                </li>
+                                <li class="quarta glide__slide">
+                                    <i class="fa-solid fa-lightbulb"></i>
+                                    <div>
+                                        <h2>Full-Stack</h2>
+                                        <p>Forte prefência por experiência do usuário Intuitivas e dinâmicas com
+                                            interface
+                                            limpa
+                                            e
+                                            fácil de usar.</p>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div> <!-- Main Slide -->
@@ -306,6 +342,41 @@
             </form>
         </div>
     </footer>
+    <script>
+        var glide = new Glide('.glide', {
+            type: 'carousel',
+            perView: 1,
+            autoplay : 5000,
+            hoverpause: true,
+            focusAt: 'center',
+            breakpoints: {
+                800: {
+                    perView: 2
+                },
+                480: {
+                    perView: 1
+                }
+            }
+        })
+
+        var glide2 = new Glide('.glide2', {
+            type: 'carousel',
+            perView: 1,
+            autoplay : 5000,
+            hoverpause: true,
+            focusAt: 'center',
+            breakpoints: {
+                800: {
+                    perView: 2
+                },
+                480: {
+                    perView: 1
+                }
+            }
+        })
+        glide.mount()
+        glide2.mount()
+    </script>
 </body>
 
 </html>
