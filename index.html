@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/themes/splide-skyblue.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/themes/splide-skyblue.min.css">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
@@ -170,7 +171,7 @@
                     </div>
                 </div>
                 <div class="main-slide">
-                    <div class="splide carrosel">
+                    <div class="splide carrosel" id="slide1">
                         <h3 class="titulo-slide">Diferenciais</h3>
                         <div class="splide__track slide-container">
                             <ul class="splide__list">
@@ -212,26 +213,20 @@
                                 </li>
                             </ul>
                         </div>
-                    </div> <!-- Primeiro Slide -->
-                    <div class="glide2 carrosel">
+                    </div> <!-- Primeiro Slide FIM -->
+                    <div class="splide carrosel" id="slide2">
                         <h3 class="titulo-slide">Diferenciais</h3>
-                        <div class="glide__track slide-container" data-glide-el="track">
+                        <div class="splide__track slide-container">
                             <!-- OUTRO ID E CLASS -->
-                            <ul class="glide__slides">
-                                <li class="primeira glide__slide">
+                            <ul class="splide__list">
+                                <li class="primeira splide__slide">
                                     <i class="fa-solid fa-code"></i>
                                     <div>
                                         <h2>Front-end</h2>
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam animi
-                                            adipisci
-                                            cumque
-                                            explicabo quisquam, id eius non amet natus ipsum vitae cum maxime atque
-                                            repellat
-                                            quia
-                                            mollitia blanditiis porro beatae.</p>
+                                        <p></p>
                                     </div>
                                 </li>
-                                <li class="segunda glide__slide">
+                                <li class="segunda splide__slide">
                                     <i class="fa-solid fa-user-gear"></i>
                                     <div>
                                         <h2>Back-end</h2>
@@ -240,7 +235,7 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li class="terceira glide__slide">
+                                <li class="terceira splide__slide">
                                     <i class="fa-solid fa-mobile-screen"></i>
                                     <div>
                                         <h2>Devops</h2>
@@ -251,7 +246,7 @@
                                             principal objetivo a experiência do usuário</p>
                                     </div>
                                 </li>
-                                <li class="quarta glide__slide">
+                                <li class="quarta splide__slide">
                                     <i class="fa-solid fa-lightbulb"></i>
                                     <div>
                                         <h2>Full-Stack</h2>
@@ -343,11 +338,27 @@
     </footer>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            var splide = new Splide('.splide', {
-                type   : 'loop',
-                autoplay: true
+            var splide = new Splide('#slide1', {
+                type: 'loop',
+                autoplay: true,
+                snap: true,
+                arrows: false,
+                speed: 1500
             });
+
             splide.mount();
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            var splide2 = new Splide('#slide2', {
+                type: 'loop',
+                autoplay: true,
+                snap: true,
+                arrows: false,
+                speed: 1500
+            });
+
+            splide2.mount();
         });
     </script>
 </body>

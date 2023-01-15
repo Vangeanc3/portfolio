@@ -1,4 +1,3 @@
-
 /* ===== SKILLS ===== */
 .skills {
     background: whitesmoke;
@@ -45,7 +44,7 @@
     flex-direction: column;
 }
 
-.coluna-grupo3{
+.coluna-grupo3 {
     padding-bottom: 3rem;
 }
 
@@ -63,7 +62,7 @@
     padding: 0 2rem 0 2rem;
 }
 
-.p-final{
+.p-final {
     margin-bottom: 2rem;
 }
 
@@ -77,7 +76,9 @@
     padding: 0 1rem 0 1rem;
 }
 
-.colunm-btn, .colunm-btn2, .colunm-btn3{
+.colunm-btn,
+.colunm-btn2,
+.colunm-btn3 {
     margin: 70px auto 0px auto;
     padding: 6px 10px 6px 10px;
     background-color: #7510F7;
@@ -94,20 +95,21 @@
 }
 
 .skills-logo-up {
-    height:100px;
+    height: 100px;
     width: 100px;
     border-radius: 20px;
     margin: 20vh 10px 0px 40px;
 }
 
 .skills-logo {
-    height:100px;
+    height: 100px;
     width: 100px;
     border-radius: 20px;
     margin: 10px 10px 10px 40px;
     position: relative;
     bottom: 5vh;
 }
+
 /* ===== FIM SKILLS ===== */
 
 /* ===== SLIDER ===== */
@@ -120,116 +122,231 @@
     flex-wrap: wrap;
 }
 
-.carrosel{
-    height: 250px;
+.carrosel {
+    height: 200px;
     width: 540px;
     border-radius: 30px;
     box-shadow: 10px 10px 20px black;
+    margin: 3rem 2rem;
+}
+
+/* .splide__arrows{
+    display: none;
+} */
+
+.carrosel:hover {
+    cursor: pointer;
 }
 
 .titulo-slide {
-letter-spacing: 4px;
-font-size: 1.4rem;
-text-align: center;
-text-transform: uppercase;
-margin-top: 10px;
+    letter-spacing: 4px;
+    font-size: 1.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2rem;
 }
 
-.slide-container{
-letter-spacing: 4px;
-font-size: 1.4rem;
-text-align: center;
-text-transform: uppercase;
-margin-top: 10px;
+.slide-container {
+    letter-spacing: 4px;
+    font-size: 1.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
 }
 
-.primeira, .segunda, .terceira, .quarta {
-display: flex;
-flex-direction: row; 
+.primeira,
+.segunda,
+.terceira,
+.quarta {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
 }
 
-.primeira div h2, .segunda div h2, .terceira div h2, .quarta div h2 {
-font-size: 2rem;
-margin: 30px 100px 10px 0;
-font-family: "Raleway";
+.primeira div,
+.segunda div,
+.terceira div,
+.quarta div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 1rem;
+    flex-wrap: wrap;
 }
 
-.primeira p, .segunda p, .terceira p, .quarta p {
-font-size: 1.7rem;
-font-family: "Raleway";
+.primeira div h2,
+.segunda div h2,
+.terceira div h2,
+.quarta div h2 {
+    font-size: 1.6rem;
+    margin: 1rem 0 1.5rem 0;
+    font-family: "Raleway";
+}
+
+
+.primeira div p,
+.segunda div p,
+.terceira div p,
+.quarta div p {
+    font-size: 1.3rem;
+    font-family: "Raleway";
+    margin: 0;
+    width: 100%;
+    text-align: left;
 
 }
 
-.primeira i, .segunda i, .terceira i, .quarta i{
-font-size: 8rem;
-color: #7510F7;
-margin: 70px 25px 0px 25px;
+.primeira i,
+.segunda i,
+.terceira i,
+.quarta i {
+    font-size: 8rem;
+    color: #7510F7;
+    margin: 1rem 2rem 0px 2rem;
 }
-/* SLIDE FIM */ 
+
+/* SLIDE FIM */
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1200px){
-    .carrosel-container{
+@media (max-width: 1200px) {
+    .carrosel-container {
         margin-bottom: 5rem;
     }
 
-    .carrosel-container:nth-child(1){
+    .carrosel-container:nth-child(1) {
         margin-top: 5rem;
-        
+
     }
 }
 
-@media (max-width: 950px){
-    .coluna-main{
+@media (max-width: 950px) {
+    .coluna-main {
         padding-right: 40px;
         padding-left: 40px;
     }
-    .coluna:nth-child(1){
+
+    .coluna:nth-child(1) {
         padding-right: 30px;
     }
-    .coluna:nth-child(2){
+
+    .coluna:nth-child(2) {
         padding-right: 30px;
         padding-left: 30px;
     }
-    .coluna:nth-child(3){
+
+    .coluna:nth-child(3) {
         padding-left: 30px;
     }
-    .colunm-p{
+
+    .colunm-p {
         font-size: 1.6rem;
     }
 }
 
-@media (max-width: 600px){
-    .primeira p, .segunda p, .terceira p, .quarta p{
-        width: 320px;
-        font-size: 1.7rem;
-    }
-}
 
-@media (max-width: 768px){
-    .coluna:nth-child(1){
+@media (max-width: 768px) {
+    .coluna:nth-child(1) {
         width: 100%;
         padding-right: 0px;
     }
-    .coluna:nth-child(2){
+
+    .coluna:nth-child(2) {
         width: 100%;
         display: none;
         border: none;
         padding-left: 0;
         padding-right: 0;
     }
-    .coluna:nth-child(3){
+
+    .coluna:nth-child(3) {
         width: 100%;
         display: none;
         border: none;
         padding-left: 0;
     }
-    .coluna-main{
+
+    .coluna-main {
         padding-left: 0;
         padding-right: 0;
     }
-    .colunm-btn, .colunm-btn2, .colunm-btn3{
+
+    .colunm-btn,
+    .colunm-btn2,
+    .colunm-btn3 {
         display: block;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .carrosel {
+        width: 450px;
+        height: 210px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .primeira div p,
+    .segunda div p,
+    .terceira div p,
+    .quarta div p {
+        font-size: 1.2rem;
+    }
+
+    .carrosel {
+        width: 400px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 425px) {
+
+
+    .primeira div h2,
+    .segunda div h2,
+    .terceira div h2,
+    .quarta div h2 {
+        font-size: 1.3rem;
+        margin: 1rem 0 1rem 0;
+        font-family: "Raleway";
+    }
+
+    .primeira div p,
+    .segunda div p,
+    .terceira div p,
+    .quarta div p {
+        font-size: 1.1rem;
+    }
+
+    .carrosel {
+        width: 350px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 375px) {
+
+
+    .primeira div h2,
+    .segunda div h2,
+    .terceira div h2,
+    .quarta div h2 {
+        font-size: 1.3rem;
+        margin: 1rem 0 1rem 0;
+        font-family: "Raleway";
+    }
+
+    .primeira div p,
+    .segunda div p,
+    .terceira div p,
+    .quarta div p {
+        font-size: 1.1rem;
+    }
+
+    .carrosel {
+        width: 300px;
+        height: 260px;
     }
 }
