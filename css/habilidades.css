@@ -328,12 +328,21 @@
 
 @media (max-width: 375px) {
 
+    .primeira i,
+    .segunda i,
+    .terceira i,
+    .quarta i {
+        font-size: 7rem;
+        color: #7510F7;
+        margin: 1rem 2rem 0px 2rem;
+    }
+
 
     .primeira div h2,
     .segunda div h2,
     .terceira div h2,
     .quarta div h2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin: 1rem 0 1rem 0;
         font-family: "Raleway";
     }
@@ -342,11 +351,11 @@
     .segunda div p,
     .terceira div p,
     .quarta div p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .carrosel {
-        width: 300px;
-        height: 260px;
+        width: 320px;
+        height: 230px;
     }
 }
