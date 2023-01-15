@@ -8,13 +8,12 @@
     <title>Martins</title>
 
     <link rel="shortcut icon" href="imgs/vangeanc3 2.png" type="image/x-icon">
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/themes/splide-skyblue.min.css">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
@@ -24,7 +23,6 @@
     <link rel="stylesheet" href="css/projetos.css">
     <link rel="stylesheet" href="css/contatos.css">
 
-    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"defer></script>
     <script src="https://kit.fontawesome.com/1d20bd8d20.js" crossorigin="anonymous" defer></script>
     <script src="js/main.js" defer></script>
@@ -171,11 +169,11 @@
                     </div>
                 </div>
                 <div class="main-slide">
-                    <div class="glide carrosel">
+                    <div class="splide carrosel">
                         <h3 class="titulo-slide">Diferenciais</h3>
-                        <div class="glide__track slide-container" data-glide-el="track">
-                            <ul class="glide__slides">
-                                <li class="primeira glide__slide">
+                        <div class="splide__track slide-container">
+                            <ul class="splide__list">
+                                <li class="primeira splide__slide">
                                     <i class="fa-solid fa-code"></i>
                                     <div>
                                         <h2>Acessibilidade</h2>
@@ -183,7 +181,7 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li class="segunda glide__slide">
+                                <li class="segunda splide__slide">
                                     <i class="fa-solid fa-user-gear"></i>
                                     <div>
                                         <h2>Clean Code</h2>
@@ -192,7 +190,7 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li class="terceira glide__slide">
+                                <li class="terceira splide__slide">
                                     <i class="fa-solid fa-user-gear"></i>
                                     <div>
                                         <h2>Responsividade</h2>
@@ -201,7 +199,7 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li class="quarta glide__slide">
+                                <li class="quarta splide__slide">
                                     <i class="fa-solid fa-lightbulb"></i>
                                     <div>
                                         <h2>Intuitivo</h2>
@@ -342,40 +340,15 @@
             </form>
         </div>
     </footer>
+    <script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
     <script>
-        var glide = new Glide('.glide', {
-            type: 'carousel',
-            perView: 1,
-            autoplay : 5000,
-            hoverpause: true,
-            focusAt: 'center',
-            breakpoints: {
-                800: {
-                    perView: 2
-                },
-                480: {
-                    perView: 1
-                }
-            }
-        })
-
-        var glide2 = new Glide('.glide2', {
-            type: 'carousel',
-            perView: 1,
-            autoplay : 5000,
-            hoverpause: true,
-            focusAt: 'center',
-            breakpoints: {
-                800: {
-                    perView: 2
-                },
-                480: {
-                    perView: 1
-                }
-            }
-        })
-        glide.mount()
-        glide2.mount()
+        document.addEventListener('DOMContentLoaded', () => {
+            var splide = new Splide('.splide', {
+                type   : 'loop',
+                autoplay: true
+            });
+            splide.mount();
+        });
     </script>
 </body>
 
