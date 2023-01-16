@@ -1,5 +1,4 @@
 /* PROJETOS PORTFÓLIO */
-
 .projetos-container {
     text-align: center;
     display: flex;
@@ -84,21 +83,21 @@
 .projetos-card:hover{
     filter: grayscale(0%);
     background-size: 115%;
-    transition: 2s;
+    transition: 1s;
     cursor: pointer;
 }
 
 .projetos-card:nth-child(1):hover{
     filter: grayscale(0%);
     background-size: 90%;
-    transition: 2s;
+    transition: 1s;
     cursor: pointer;
 }
 
 .projetos-card:nth-child(3):hover{
     filter: grayscale(0%);
     background-size: 110%;
-    transition: 2s;
+    transition: 1s;
     cursor: pointer;
 }
 
@@ -157,6 +156,7 @@
 
 /* MODAL */ 
 .modal-container{
+    animation: projeto-click .3s ease-in-out forwards;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -169,8 +169,9 @@
 }
 
 .modal{
-    width: 85vw;
-    height: 90vh;
+    border-radius: 20px;
+    width: 50vw;
+    height: 97vh;
     background: white;
     z-index: 30;
 }

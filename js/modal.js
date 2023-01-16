@@ -30,5 +30,6 @@ const None = (elemento) => {
 const Flex = (elemento) => {
       elemento.style.display = "flex";
       document.querySelector("body").style.overflowY = "hidden";
+      elemento.style.opacity = "0"
    }
 
