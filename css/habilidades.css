@@ -55,7 +55,7 @@
 }
 
 .colunm-p {
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-top: 30px;
     vertical-align: inherit;
     font-family: 'Montserrat', sans-serif;
@@ -63,7 +63,7 @@
 }
 
 .p-final {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .colunm-p2 {
@@ -79,7 +79,7 @@
 .colunm-btn,
 .colunm-btn2,
 .colunm-btn3 {
-    margin: 70px auto 0px auto;
+    margin: 1rem auto 0 auto;
     padding: 6px 10px 6px 10px;
     background-color: #7510F7;
     color: #fff;
@@ -188,7 +188,7 @@
 .segunda div p,
 .terceira div p,
 .quarta div p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: "Raleway";
     margin: 0;
     width: 100%;
@@ -240,7 +240,7 @@
     }
 
     .colunm-p {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -276,6 +276,7 @@
     .colunm-btn3 {
         display: block;
     }
+
 }
 
 @media (max-width: 600px) {
@@ -287,6 +288,10 @@
 }
 
 @media (max-width: 500px) {
+
+    .colunm-p {
+        font-size: 1.4rem;
+    }
 
     .primeira div p,
     .segunda div p,
