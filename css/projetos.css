@@ -179,4 +179,10 @@
 #modal1, #modal2, #modal3{
     display: none;
 }
+
+.modal-titulo h2{
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 4rem;
+}
 /* FIM MODAL */
