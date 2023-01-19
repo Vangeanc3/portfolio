@@ -157,6 +157,7 @@
 /* MODAL */ 
 .modal-container{
     animation: projeto-click .3s ease-in-out forwards;
+    transition: .3s;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -170,11 +171,12 @@
 
 .modal{
     border-radius: 20px;
-    width: 50vw;
+    width: 65vw;
     height: 97vh;
     background: white;
     z-index: 30;
     padding: 3rem;
+    overflow-y: scroll;
 }
 
 #modal1, #modal2, #modal3{

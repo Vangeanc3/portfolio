@@ -3,26 +3,27 @@ var btn2 = document.getElementById("projeto2");
 var btn3 = document.getElementById("projeto3");
 
 btn1.addEventListener("click", () => {
-   let modal1 = document.getElementById("modal1");
-   Flex(modal1)
-   None(modal1);
+   let modal = document.getElementById("modal1");
+   let modalBtn = document.querySelector(".modal-fechar")
+   Flex(modal)
+   None(modalBtn, modal1);
 })
 
 btn2.addEventListener("click", () => {
-   let modal2 = document.getElementById("modal2");
-   Flex(modal2)
-   None(modal2);
+   let modal = document.getElementById("modal2");
+   Flex(modal)
+   None(modal);
 })
 
 btn3.addEventListener("click", () => {
-   let modal3 = document.getElementById("modal3");
-   Flex(modal3)
-   None(modal3);
+   let modal = document.getElementById("modal3");
+   Flex(modal)
+   None(modal);
 })
 
-const None = (elemento) => {
+const None = (elemento, modal) => {
    elemento.addEventListener("click", () => {
-      elemento.style.display = "none";
+      modal.style.display = "none";
       document.querySelector("body").style.overflowY = "visible";
    })
 };
