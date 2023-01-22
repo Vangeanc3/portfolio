@@ -26,3 +26,9 @@ rem - multiplicado pelo root
 Add variáveis no css ex:
 
 --
+
+## Fonts
+
+font-family: 'Raleway', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Lato';

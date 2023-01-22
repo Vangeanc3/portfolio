@@ -144,7 +144,7 @@
     text-align: center;
     text-transform: uppercase;
     padding: 2rem 0 1rem 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Raleway', sans-serif;
     border-bottom: .5px solid #7510F7;
 }
 
@@ -193,7 +193,8 @@
 .terceira div p,
 .quarta div p {
     font-size: 1.2rem;
-    font-family: "Raleway";
+    /* font-family: "Raleway"; */
+    font-family: "Lato";
     margin: 0;
     width: 100%;
     text-align: left;
@@ -292,6 +293,16 @@
 }
 
 @media (max-width: 500px) {
+    .primeira i,
+    .segunda i,
+    .terceira i,
+    .quarta i {
+        font-size: 7.5rem;
+        color: #7510F7;
+        margin: 1rem 2rem 0px 2rem;
+    }
+
+
 
     .colunm-p {
         font-size: 1.4rem;

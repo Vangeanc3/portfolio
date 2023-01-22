@@ -65,6 +65,7 @@
     font-size: 3.6rem;
     color: white;
     margin-bottom: 20px;
+    font-family: "Lato";
 }
 
 .text p{
@@ -73,6 +74,14 @@
     text-align: justify;
     margin-bottom: 20px;
 } 
+
+.text p a{
+    color: aqua;
+}
+
+.sobre-mobile-p p a{
+    color: red;
+}
 
 .text .btn{
     padding: 10px;
@@ -107,6 +116,7 @@
 .sobre-mobile-h2{
     font-size: 2.6rem;
     transform: translateY(-6rem);
+    font-family: "Lato";
 }
 
 .sobre-mobile-p{
