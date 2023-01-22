@@ -186,7 +186,8 @@
 .modal-titulo h2{
     font-size: 4rem;
     text-align: center;
-    margin-top: 2rem;
+    border-bottom: #7510F7 1px solid;
+    padding: 1rem 0 2rem 0 ;
 }
 
 .modal-container-conteudo{
@@ -196,6 +197,7 @@
 .modal-container-conteudo h3{
     font-size: 2.3rem;
     margin-bottom: 1.5rem;
+    color: #7510F7;
 }
 
 .modal-container-conteudo div{
@@ -228,16 +230,20 @@
 }
 
 .modal-container-conteudo div img{
-    width: 35vw;
+    width: 36vw;
 }
 
 .modal-conteudo-img{
-    width: 35vw;    
+    width: 36vw;    
 }
 
 .modal-conteudo-titulo-center{
     text-align: center;
     margin-top: 3rem;
+}
+
+.last-conteudo{
+    border-top: solid #7510F7 .5px;
 }
 
 .modal-conteudo-ul-tec{
