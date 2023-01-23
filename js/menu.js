@@ -2,6 +2,7 @@ var mobileMenu = document.querySelector(".mobile-menu");
 var navList = document.querySelector(".list");
 var navLinks = document.querySelectorAll(".list li");
 var activeClass = "active";
+var activeScroll = true;
 this.handleClick = this.handleClick.bind(this);
 
 function animateLinks() {
@@ -15,6 +16,14 @@ function animateLinks() {
 }
 
 function handleClick() {
+  if (activeScroll == true){
+    document.querySelector("body").style.overflowY = "hidden";
+    activeScroll = false;
+  } else{
+    document.querySelector("body").style.overflowY = "visible";
+    activeScroll = true
+  }
+
   navList.classList.toggle(activeClass);
   mobileMenu.classList.toggle(activeClass);
   animateLinks();
@@ -25,7 +34,10 @@ function clickLink() {
     link.addEventListener("click", () => {
       navList.classList.toggle(activeClass);
       mobileMenu.classList.toggle(activeClass);
-      animateLinks()
+      animateLinks();
+      
+      document.querySelector("body").style.overflowY = "visible";
+      activeScroll = true
     })
   })
 } 

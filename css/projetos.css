@@ -188,6 +188,8 @@
     text-align: center;
     border-bottom: #7510F7 1px solid;
     padding: 1rem 0 2rem 0 ;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Lato';
 }
 
 .modal-container-conteudo{
@@ -217,16 +219,19 @@
     letter-spacing: 1px;
     line-height: 2.5rem;
     width: 35vw;
+    font-family: "Montserrat";
 }
 
 .modal-container-conteudo div .modal-conteudo-ul{
     width: 35vw;
+    list-style-type: circle;
 }
 
 .modal-container-conteudo div ul li{
     font-size: 1.8rem;
     letter-spacing: 1px;
     line-height: 2.5rem;
+    font-family: "Montserrat";
 }
 
 .modal-container-conteudo div img{
