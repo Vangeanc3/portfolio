@@ -164,7 +164,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    transition: transform 1s ease-in-out;
+    transition: transform .8s ease-in-out;
     transform: rotateX(-90deg);
     visibility: hidden;
     z-index: 20;
@@ -178,20 +178,39 @@
     visibility: visible;
 }
 
+.fechaModal{
+    animation: fechaModal 1s forwards;
+}
+
+@keyframes fechaModal {
+    0%{
+        transform: rotateX(0deg);
+    }
+    100%{
+        transform: rotateX(-90deg);
+    }
+}
+
 .modal-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    margin: auto;
     border-radius: 20px;
     width: 80vw;
     height: 95vh;
-    transform-style: preserve-3d;
-    transform: translate(-50%, -50%);
     background-color: white;
     z-index: 30;
     padding: 3rem;
-    overflow-y: scroll;
+    overflow-y: auto;
+    transform: perspective(600px) rotateX(90deg);
 }
+
+.modalAnimado{
+    animation: modalAppear 0.5s .3s ease-in-out forwards; /* Adiciona animação de entrada */
+}
+
+@keyframes modalAppear {
+    0% { transform: perspective(600px) rotateX(90deg); opacity: 0; }
+    100% { transform: perspective(600px) rotateX(0deg); opacity: 1; }
+  }
 /* TESTE */ 
 
 /* .modal {
