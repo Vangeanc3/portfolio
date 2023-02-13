@@ -285,7 +285,7 @@
 
 .modal-container-conteudo div .modal-conteudo-ul {
     width: 35vw;
-    list-style-type: circle;
+    list-style-type: disc;
 }
 
 .modal-container-conteudo div ul li {
@@ -325,6 +325,21 @@
 
 .modal-conteudo-ul-tec li {
     margin: 1rem 2rem;
+}
+
+.modal-conteudo-ul-tec li:hover{
+    cursor: pointer;
+}
+
+.modal-conteudo-ul-tec-linha{
+    border-bottom: #7510F7 solid 4px;
+    width: 50%;
+    margin: .3rem auto 0 auto;
+}
+
+.modal-conteudo-ul-tec li:hover .modal-conteudo-ul-tec-linha{
+    width: 100%;
+    transition: .5s;
 }
 
 .modal-fechar-wrapper {
