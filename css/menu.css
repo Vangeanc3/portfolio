@@ -35,14 +35,16 @@ header {
 }
 
 .links {
-    padding: 1vw;
+    padding: .5vh 1vw;
     font-family: 'Montserrat', sans-serif;
     font-family: "Raleway";
  
 }
 
 .links:hover{
-    border-bottom: solid 10px #fff;
+    transition: .5s;
+    letter-spacing: 5px;
+    border-bottom: solid 3px #fff;
 }
 
 .list {

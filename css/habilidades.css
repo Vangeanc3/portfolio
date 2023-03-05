@@ -17,7 +17,7 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .coluna:nth-child(2) {
@@ -62,8 +62,17 @@
     padding: 0 2rem 0 2rem;
 }
 
-.p-final {
-    margin-bottom: 1rem;
+
+.colunm-lista{
+    list-style: none;
+    margin-top: 30px;
+}
+
+.colunm-lista li{
+    vertical-align: inherit;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    margin: 3vh 0;
 }
 
 .colunm-p2 {
@@ -92,6 +101,11 @@
 .git {
     color: red;
     text-decoration: none;
+}
+
+.git:hover {
+    transition: .3s;
+    border-bottom: 2px solid #7510F7;
 }
 
 .skills-logo-up {

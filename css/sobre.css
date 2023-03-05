@@ -79,6 +79,10 @@
     color: aqua;
 }
 
+.text p a:hover{
+    letter-spacing: .5px;    
+}
+
 .sobre-mobile-p p a{
     color: red;
 }
