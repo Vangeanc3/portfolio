@@ -133,6 +133,18 @@
     text-align: center;
 }
 
+.sobre-btn-mobile{
+    padding: 10px;
+    transform: translateY(-3rem);
+    margin: 0 auto 0 auto;
+    background-color: #1a1717;
+    border: solid 2px white;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Raleway";
+    font-size: 13pt;
+}
+
 /* FIM SOBRE */ 
 
 @media (max-width: 900px){
