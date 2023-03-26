@@ -294,19 +294,23 @@
             </div>
             <!-- PROJETOS FIM -->
             <!-- MODAL-PROJETOS -->
-            <div class="modal" id="modal1"> <!-- MODAL 1 -->
+            <div class="modal" id="modal1">
+                <!-- MODAL 1 -->
                 <div class="modal-wrapper" id="modal-wrapper1">
                     <div class="modal-titulo">
                         <h2>Banpará</h2>
+                        <a href="#">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
                     </div>
                     <div class="modal-container-conteudo">
                         <h3>Resumo:</h3>
                         <div class="modal-container-resumo">
-                            <p>Durante meu estágio no Banpará, recebi a tarefa em conjunto com outro
+                            <p>Durante meu estágio, recebi a tarefa em conjunto com outro
                                 estagiário, de fazer um sistema web que automatizava a validação de
-                                contratos com base em pontos de função. Esses contratos que eram entregues em uma
-                                planilha do excel, em um padrão não muito agrádavel, assim, dificultando o desempenho
-                                dos análistas</p>
+                                contratos com base em pontos de função.<br> Os contratos que eram entregues em uma
+                                planilha do excel, em um padrão não muito agrádavel, dificultando o desempenho
+                                dos análistas.</p>
                             <img loading="lazy" src="imgs/Apf_tela_logi.png" alt="" class="modal-img">
                         </div>
                     </div>
@@ -314,11 +318,13 @@
                         <h3>Funcionalidades:</h3>
                         <div>
                             <ul class="modal-conteudo-ul">
-                                <li>Telas de cadastro e login de usuários</li>
-                                <li>controle e gestão de usuários, com poder de gerenciar os usuários do sistema(CRUD).
+                                <li>- Telas de cadastro e login de usuários</li>
+                                <li>- controle e gestão de usuários, com poder de gerenciar os usuários do
+                                    sistema(CRUD).
                                 </li>
-                                <li>Leitura de planilhas, com upload e download de arquivos via array de bits(CRUD)</li>
-                                <li>Controle e gestão de fornecedores e sistemas de terceirizados do Banco(CRUD)</li>
+                                <li>- Leitura de planilhas, com upload e download de arquivos via array de bits(CRUD)
+                                </li>
+                                <li>- Controle e gestão de fornecedores e sistemas de terceirizados do Banco(CRUD)</li>
                             </ul>
                             <img loading="lazy" src="imgs/apfTela.png" alt="" class="modal-conteudo-img">
                         </div>
@@ -328,7 +334,8 @@
                         <div>
                             <ul class="modal-conteudo-ul-tec">
                                 <li>
-                                    <a href="https://dotnet.microsoft.com/en-us/learn/aspnet/what-is-aspnet-core" target="_blank">
+                                    <a href="https://dotnet.microsoft.com/en-us/learn/aspnet/what-is-aspnet-core"
+                                        target="_blank">
                                         ASP.NET Core
                                         <div class="modal-conteudo-ul-tec-linha"></div>
                                     </a>
@@ -340,13 +347,15 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.microsoft.com/pt-br/sql-server/sql-server-2019" target="_blank">
+                                    <a href="https://www.microsoft.com/pt-br/sql-server/sql-server-2019"
+                                        target="_blank">
                                         SQL Server
                                         <div class="modal-conteudo-ul-tec-linha"></div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor" target="_blank">
+                                    <a href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor"
+                                        target="_blank">
                                         Blazor WASM
                                         <div class="modal-conteudo-ul-tec-linha"></div>
                                     </a>
@@ -365,11 +374,92 @@
                     </div>
                 </div>
             </div>
-            <div class="modal" id="modal2"> <!-- MODAL 2 -->
+            <div class="modal" id="modal2">
+                <!-- MODAL 2 -->
                 <div class="modal-wrapper" id="modal-wrapper2">
-                    <div class="titulo-padrao">
-                        <h2>Instalador-API</h2>
-                        <div class="titulo-linha line"></div>
+                    <div class="modal-titulo">
+                        <h2>Instalador SA</h2>
+                        <a href="https://github.com/Vangeanc3/APP_API/tree/Desenvolvimento" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="modal-container-conteudo-center">
+                        <h3>Resumo:</h3>
+                        <div class="modal-container-resumo">
+                            <p>
+                                Instalador SA é uma API desenvolvida para um aplicativo de gestão de orçamentos para
+                                instaladores e revendedores credenciados na Eletro Transol. À medida que o aplicativo
+                                cresceu, tornou-se necessário atualizar o sistema, migrando-o do Firebase para o ASP.NET
+                                Core, para melhorar o desempenho e a segurança, que são recursos oferecidos pelo .NET.
+                                Como responsável pela migração, fiquei encarregado de trabalhar no back-end da API, que
+                                não possui uma interface visual direta. Link do App: <a
+                                    href="https://play.google.com/store/apps/details?id=br.exodussistemas.instaladorsa2">
+                                    Front-End Desenvolvido por Diemisom Melo (Exodus)</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-container-conteudo-center">
+                        <h3>Funcionalidades:</h3>
+                        <div class="modal-container-resumo">
+                            <p>Desenvolvi todas as funcionalidades do aplicativo para usuários, clientes, instaladores,
+                                vendedores e administradores. Dado que o projeto apresentava uma complexidade
+                                significativa, decidi dividi-lo em microsserviços, de modo que cada um pudesse funcionar
+                                independentemente dos outros. Isso melhorou significativamente o desempenho do sistema e
+                                a velocidade das respostas. <br><br> O sistema incluía recursos de cadastro e login de
+                                usuários com JWT Token, além de recursos de autorização que controlavam as ações
+                                permitidas para cada usuário. Segui boas práticas de desenvolvimento, como Clean Code e
+                                Arquitetura SOLID, para garantir a qualidade do código e torná-lo mais fácil de manter e
+                                modificar no futuro.</p>
+                        </div>
+                    </div>
+                    <div class="modal-container-conteudo last-conteudo">
+                        <h3 class="modal-conteudo-titulo-center">Tecnologias usadas:</h3>
+                        <div>
+                            <ul class="modal-conteudo-ul-tec">
+                                <li>
+                                    <a href="https://dotnet.microsoft.com/en-us/learn/aspnet/what-is-aspnet-core"
+                                        target="_blank">
+                                        ASP.NET Core
+                                        <div class="modal-conteudo-ul-tec-linha"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://learn.microsoft.com/en-us/ef/core/" target="_blank">
+                                        EF Core
+                                        <div class="modal-conteudo-ul-tec-linha"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.microsoft.com/pt-br/sql-server/sql-server-2019"
+                                        target="_blank">
+                                        SQL Server
+                                        <div class="modal-conteudo-ul-tec-linha"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://automapper.org/" target="_blank">
+                                        AutoMapper
+                                        <div class="modal-conteudo-ul-tec-linha"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://jwt.io/" target="_blank">
+                                        JWT Token
+                                        <div class="modal-conteudo-ul-tec-linha"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://azure.microsoft.com/pt-br/free/search/?OCID=AIDcmmzmnb0182_SEM_f4534eb91767173973ae2a996b4a6972:G:s&ef_id=f4534eb91767173973ae2a996b4a6972:G:s&msclkid=f4534eb91767173973ae2a996b4a6972"
+                                        target="_blank">
+                                        Azure Services
+                                        <div class="modal-conteudo-ul-tec-linha"></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-fechar-wrapper">
+                        <button class="modal-fechar">Fechar</button>
                     </div>
                 </div>
             </div>
