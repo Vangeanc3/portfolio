@@ -44,11 +44,11 @@
 }
 
 .projetos-card:nth-child(2) {
-    background-image: url(../imgs/REAcreative.png);
+    background-image: url(../imgs/instalador.webp);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #22827e;
+    background-color: #245136;
 }
 
 .projetos-card:nth-child(1) {
@@ -273,7 +273,7 @@
     font-family: "Raleway";
 }
 
-.modal-conteudo-ul-tec li{
+.modal-conteudo-ul-tec li a{
     color: #0367ad;
     font-size: 2rem;
     font-family: "Raleway";
@@ -437,8 +437,11 @@
         width: 60vw;
     }
 
-    .modal-conteudo-ul-tec li {
+    .modal-conteudo-ul-tec li{
         margin: 1rem 1rem;
+    }
+
+    .modal-conteudo-ul-tec li a{
         font-size: 1.5rem;
     }
 }
@@ -449,9 +452,12 @@
         height: 100vh;
     }
 
-    .modal-conteudo-ul-tec li {
+    .modal-conteudo-ul-tec li{
         width: 100px;
         margin: 1rem 1rem;
+    }
+
+    .modal-conteudo-ul-tec li a{
         font-size: 1.4rem;
     }
 
