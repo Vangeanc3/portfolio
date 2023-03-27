@@ -121,7 +121,7 @@
                             <h3 class="colunm-title"> Front Skills </h3>
                             <p class="colunm-p limite-paragrafo"> Valorizo uma estrutura simples, padrões de designs
                                 limpos,
-                                interações ponderadas, com foco na experiência do usuario.</p>
+                                interações ponderadas, prezando a experiência do usuario.</p>
 
                             <p class="colunm-p2">Front-End Tools:</p>
 
@@ -134,6 +134,8 @@
                                     <li>Razor Pages</li>
                                     <li>React</li>
                                     <li>SASS</li>
+                                    <li>Provider</li>
+
                                 </ul>
                             </div>
                             <button class="colunm-btn">Next Skill</button>
@@ -190,9 +192,8 @@
                                 <li class="primeira splide__slide">
                                     <i class="fa-solid fa-code"></i>
                                     <div>
-                                        <h2>Front-End</h2>
-                                        <p>Vasto conhecimento em construção de paginas web, valorizo a experiência dos
-                                            nossos clientes.
+                                        <h2>Mobile</h2>
+                                        <p>Crio aplicativos para celular, utilizando sempre as melhores tecnologias do mercado.
                                         </p>
                                     </div>
                                 </li>
@@ -200,7 +201,7 @@
                                     <i class="fa-solid fa-user-gear"></i>
                                     <div>
                                         <h2>Acessibilidade</h2>
-                                        <p>Meus layouts permitem a qualquer pessoa navegar, entender, perceber e
+                                        <p>Meus layouts permitem a qualquer pessoa navegar, entender e
                                             interagir com o
                                             conteúdo de forma eficaz ao utilizá-lo.
                                         </p>
@@ -210,11 +211,11 @@
                                     <i class="fa-solid fa-user-gear"></i>
                                     <div>
                                         <h2>Responsividade</h2>
-                                        <p>Meus layouts funcionarão em qualquer tipo de dispositivo, grande ou
+                                        <p>Meus layouts funcionarão em qualquer tipo de dispositivo, grande, médio ou
                                             pequeno,
                                             tendo
                                             como
-                                            principal objetivo a experiência do usuário
+                                            principal objetivo a UX
                                         </p>
                                     </div>
                                 </li>
@@ -224,8 +225,8 @@
                                         <h2>Intuitivo</h2>
                                         <p>Forte prefência por UX/UI Intuitivas e dinâmicas, com
                                             interface limpa
-                                            e
-                                            fácil de utilizar</p>
+                                            e de
+                                            fácil entendimento</p>
                                     </div>
                                 </li>
                             </ul>
@@ -239,7 +240,7 @@
                                 <li class="primeira splide__slide">
                                     <i class="fa-solid fa-code"></i>
                                     <div>
-                                        <h2>Back-End</h2>
+                                        <h2>API's</h2>
                                         <p>Como meu trabalho tem foco em construções de API's web, valorizo a
                                             integridade e entrega dos dados, conforme a demanda.</p>
                                     </div>
@@ -306,11 +307,14 @@
                     <div class="modal-container-conteudo">
                         <h3>Resumo:</h3>
                         <div class="modal-container-resumo">
-                            <p>Durante meu estágio, recebi a tarefa em conjunto com outro
-                                estagiário, de fazer um sistema web que automatizava a validação de
-                                contratos com base em pontos de função.<br> Os contratos que eram entregues em uma
-                                planilha do excel, em um padrão não muito agrádavel, dificultando o desempenho
-                                dos análistas.</p>
+                            <p>Durante o meu estágio, eu e outro estagiário recebemos a tarefa de desenvolver um sistema
+                                web que automatizasse a validação de contratos com base em pontos de função. Os
+                                contratos eram entregues em uma planilha do Excel com um formato pouco agradável e
+                                difícil de ser analisado pelos profissionais responsáveis. Com o novo sistema, o
+                                processo de validação se tornou mais rápido e eficiente, facilitando o trabalho dos
+                                analistas e garantindo maior precisão na avaliação dos contratos. Além disso, a
+                                automatização do processo permitiu uma redução significativa de erros humanos e aumentou
+                                a produtividade da equipe.</p>
                             <img loading="lazy" src="imgs/Apf_tela_logi.png" alt="" class="modal-img">
                         </div>
                     </div>
@@ -318,13 +322,21 @@
                         <h3>Funcionalidades:</h3>
                         <div>
                             <ul class="modal-conteudo-ul">
-                                <li>- Telas de cadastro e login de usuários</li>
-                                <li>- controle e gestão de usuários, com poder de gerenciar os usuários do
-                                    sistema(CRUD).
+                                <li>- Telas de cadastro e login de usuários para garantir a segurança e a privacidade
+                                    das
+                                    informações.</li>
+                                <li>- Controle e gestão de usuários, para gerenciar todos os usuários do sistema. Isso
+                                    permite adicionar, editar, visualizar e excluir usuários com
+                                    facilidade.
                                 </li>
-                                <li>- Leitura de planilhas, com upload e download de arquivos via array de bits(CRUD)
+                                <li>- Leitura de planilhas, com a capacidade de fazer upload e download de arquivos via
+                                    array de bits. Isso possibilita a importação e exportação de dados de forma
+                                    simples e eficiente.
                                 </li>
-                                <li>- Controle e gestão de fornecedores e sistemas de terceirizados do Banco(CRUD)</li>
+                                <li>- Controle e gestão de fornecedores e sistemas terceirizados do Banco, para
+                                    garantir que todas as informações sejam gerenciadas de forma adequada e segura. Isso
+                                    inclui a possibilidade de adicionar, visualizar e excluir fornecedores e
+                                    sistemas terceirizados do banco.</li>
                             </ul>
                             <img loading="lazy" src="imgs/apfTela.png" alt="" class="modal-conteudo-img">
                         </div>
@@ -370,7 +382,7 @@
                         </div>
                     </div>
                     <div class="modal-fechar-wrapper">
-                        <button class="modal-fechar">Fechar</button>
+                        <button class="modal-fechar" id="modal-fechar1">Fechar</button>
                     </div>
                 </div>
             </div>
@@ -459,7 +471,7 @@
                         </div>
                     </div>
                     <div class="modal-fechar-wrapper">
-                        <button class="modal-fechar">Fechar</button>
+                        <button class="modal-fechar" id="modal-fechar2">Fechar</button>
                     </div>
                 </div>
             </div>

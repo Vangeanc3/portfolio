@@ -229,7 +229,7 @@
     height: 95vh;
     background: white;
     z-index: 30;
-    padding: 3rem;
+    padding: 2rem;
     overflow-y: scroll;
 }
 
@@ -299,9 +299,9 @@
 
 /* ESTILO DE PARAGRAFO PARA PROJETOS */
 .modal-container-conteudo div p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 2.5rem;
-    width: 35vw;
+    width: 40vw;
     font-family: "Raleway";
 }
 
@@ -318,24 +318,25 @@
 }
 
 .modal-container-conteudo div .modal-conteudo-ul {
-    width: 35vw;
+    width: 39vw;
     list-style-type: none
 }
 
 .modal-conteudo-ul li {
-    font-size: 1.8rem;
-    line-height: 2.5rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
     font-family: "Raleway";
 }
 
 .modal-conteudo-ul-tec li a {
     color: #0367ad;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: "Raleway";
 }
 
 .modal-container-conteudo div img {
     width: 36vw;
+    /* height: 40vh; */
 }
 
 .modal-conteudo-img {
@@ -407,61 +408,82 @@
 
 /* FIM MODAL */
 
-@media (max-width: 1024px) {
-    .modal-wrapper {
-        width: 85vw;
-    }
-
-    .modal-container-conteudo-center div p {
-        font-size: 1.7rem;
-    }
-
-    .modal-container-conteudo div p {
-        font-size: 1.7rem;
-        width: 38vw;
-    }
-
-    .modal-container-conteudo div .modal-conteudo-ul {
-        width: 38vw;
-        font-size: 1.6rem;
-    }
-
-    .modal-container-conteudo div .modal-conteudo-ul li {
-        font-size: 1.6rem;
-    }
-}
-
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     .modal-wrapper {
         width: 90vw;
     }
 
-    .modal-container-conteudo div p {
+    .modal-container-conteudo-center div p {
         font-size: 1.6rem;
+    }
+
+    .modal-container-conteudo div p {
+        font-size: 1.5rem;
+        width: 44vw;
+    }
+
+    .modal-container-conteudo div img {
+        width: 38vw;
+    }
+
+    .modal-conteudo-img {
+        width: 38vw;
+    }
+
+
+    .modal-container-conteudo div .modal-conteudo-ul {
+        width: 45vw;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .modal-container-conteudo div {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .modal-container-conteudo:nth-child(2) div {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-wrapper {
+        width: 95vw;
+    }
+
+    .modal-container-conteudo div p {
+        width: 85vw;
     }
 
     .modal-container-conteudo-center div p {
         font-size: 1.6rem;
     }
 
+    .modal-container-conteudo div .modal-conteudo-ul {
+        margin-top: 2rem;
+        width: 80vw;
+    }
+
     .modal-container-conteudo div .modal-conteudo-ul li {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 
     .modal-container-conteudo div img {
-        width: 40vw;
+        width: 80vw;
     }
 
     .modal-conteudo-img {
-        width: 40vw;
+        width: 60vw;
     }
 }
 
 @media (max-width: 768px) {
-    .modal-wrapper {
-        width: 95vw;
-    }
-
     .modal-titulo h2 {
         font-size: 3rem;
     }
@@ -474,47 +496,16 @@
         font-size: 4.5rem;
     }
 
-
-    .modal-container-conteudo div {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .modal-container-conteudo:nth-child(2) div {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .modal-container-conteudo div p {
-        font-size: 1.5rem;
-        width: 80vw;
-        margin-top: 2rem;
-        text-align: center;
-    }
-
     .modal-container-conteudo-center div p {
         font-size: 1.5rem;
     }
-
-    .modal-container-conteudo div .modal-conteudo-ul {
-        margin-top: 2rem;
-        width: 70vw;
+  
+    .modal-container-conteudo div p {
+        font-size: 1.5rem;
     }
 
     .modal-container-conteudo div .modal-conteudo-ul li {
-        font-size: 1.6rem;
-    }
-
-    .modal-container-conteudo div img {
-        width: 60vw;
-    }
-
-    .modal-conteudo-img {
-        width: 60vw;
+        font-size: 1.45rem;
     }
 
     .modal-conteudo-ul-tec li {
