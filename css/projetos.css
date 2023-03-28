@@ -318,12 +318,12 @@
 }
 
 .modal-container-conteudo div .modal-conteudo-ul {
-    width: 39vw;
+    width: 42vw;
     list-style-type: none
 }
 
 .modal-conteudo-ul li {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 2.2rem;
     font-family: "Raleway";
 }
@@ -334,13 +334,18 @@
     font-family: "Raleway";
 }
 
+.modal-container-conteudo-center div img{
+    border-radius: 20px;
+    width: 50vw;
+}
+
 .modal-container-conteudo div img {
-    width: 36vw;
+    width: 34vw;
     /* height: 40vh; */
 }
 
 .modal-conteudo-img {
-    width: 36vw;
+    width: 34vw;
 }
 
 .modal-conteudo-titulo-center {
@@ -419,11 +424,15 @@
 
     .modal-container-conteudo div p {
         font-size: 1.5rem;
-        width: 44vw;
+        width: 46vw;
     }
 
     .modal-container-conteudo div img {
         width: 38vw;
+    }
+
+    .modal-container-conteudo-center div img{
+        width: 65vw;
     }
 
     .modal-conteudo-img {
@@ -433,6 +442,10 @@
 
     .modal-container-conteudo div .modal-conteudo-ul {
         width: 45vw;
+    }
+
+    .modal-container-conteudo div .modal-conteudo-ul li {
+        font-size: 1.42rem;
     }
 }
 
@@ -478,6 +491,10 @@
         width: 80vw;
     }
 
+    .modal-container-conteudo-center div img{
+        width: 75vw;
+    }
+
     .modal-conteudo-img {
         width: 60vw;
     }
@@ -499,7 +516,7 @@
     .modal-container-conteudo-center div p {
         font-size: 1.5rem;
     }
-  
+
     .modal-container-conteudo div p {
         font-size: 1.5rem;
     }
@@ -518,7 +535,6 @@
 }
 
 @media (max-width: 509px) {
-
     .modal-titulo h2 {
         font-size: 2.5rem;
     }

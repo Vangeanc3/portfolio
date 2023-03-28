@@ -12,83 +12,48 @@ const wrapper3 = document.getElementById("modal-wrapper3")
 
 const btnFechar1 = document.querySelector("#modal-fechar1");
 const btnFechar2 = document.querySelector("#modal-fechar2");
+const btnFechar3 = document.querySelector("#modal-fechar3");
 
 // FUNÇÃO QUE VAI ABRIR O MODAL:
-btn1.addEventListener("click", () => {
-   if (modal1.classList.contains("fechaModal")) {
-      modal1.classList.remove("fechaModal")
+const abrirModal = (modal, wrapper) => {
+   if (modal.classList.contains("fechaModal")) {
+      modal.classList.remove("fechaModal")
    }
-   modal1.classList.add("visible");
-   wrapper1.classList.add("modalAnimado");
+   modal.classList.add("visible");
+   wrapper.classList.add("modalAnimado");
    document.querySelector("body").style.overflowY = "hidden";
-})
+}
 
-btn2.addEventListener("click", () => {
-   if (modal2.classList.contains("fechaModal")) {
-      modal2.classList.remove("fechaModal")
-   }
-   modal2.classList.add("visible");
-   wrapper2.classList.add("modalAnimado");
-   document.querySelector("body").style.overflowY = "hidden";
-})
+btn1.addEventListener("click", () => abrirModal(modal1, wrapper1))
+btn2.addEventListener("click", () => abrirModal(modal2, wrapper2))
+btn3.addEventListener("click", () => abrirModal(modal3, wrapper3))
 
-
-btn3.addEventListener("click", () => {
-   if (modal3.classList.contains("fechaModal")) {
-      modal3.classList.remove("fechaModal")
-   }
-   modal3.classList.add("visible");
-   wrapper3.classList.add("modalAnimado");
-})
 //FUNÇÃO QUE VAI FECHAR O MODAL QUANDO CLICADO FORA DELE:
-modal1.addEventListener("click", function (event) {
-   if (event.target === modal1) {
-      if (modal1.classList.contains("visible")) {
-         modal1.classList.add("fechaModal");
-         setTimeout(() => { modal1.classList.remove("visible") }, 1000)
+const fecharModal = (event, modal, wrapper) => { 
+   if (event.target === modal) {
+      if (modal.classList.contains("visible")) {
+         modal.classList.add("fechaModal");
+         setTimeout(() => { modal.classList.remove("visible") }, 1000)
       }
-      wrapper1.classList.remove("modalAnimado");
+      wrapper.classList.remove("modalAnimado");
       document.querySelector("body").style.overflowY = "auto";
    }
-});
+}
 
-modal2.addEventListener("click", function (event) {
-   if (event.target === modal2) {
-      if (modal2.classList.contains("visible")) {
-         modal2.classList.add("fechaModal");
-         setTimeout(() => { modal2.classList.remove("visible") }, 1000)
-      }
-      wrapper2.classList.remove("modalAnimado");
-      document.querySelector("body").style.overflowY = "auto";
-   }
-});
+modal1.addEventListener("click", (event) => fecharModal(event, modal1, wrapper1))
+modal2.addEventListener("click", (event) => fecharModal(event, modal2, wrapper2));
+modal3.addEventListener("click", (event) => fecharModal(event, modal3, wrapper3));
 
-modal3.addEventListener("click", function (event) {
-   if (event.target === modal3) {
-      if (modal3.classList.contains("visible")) {
-         modal3.classList.add("fechaModal");
-         setTimeout(() => { modal3.classList.remove("visible") }, 1000)
-      }
-      wrapper3.classList.remove("modalAnimado");
-   }
-});
 //FUNÇÃO QUE VAI FECHAR O MODAL QUANDO CLICAR NO BOTÃO DE FECHAR:
-btnFechar1.addEventListener("click", () => {
-   if (modal1.classList.contains("visible")) {
-      modal1.classList.add("fechaModal");
+const fecharModalBtn = (modal, wrapper) => {
+   if (modal.classList.contains("visible")) {
+      modal.classList.add("fechaModal");
       setTimeout(() => { modal1.classList.remove("visible") }, 1000)
    }
-   wrapper1.classList.remove("modalAnimado");
+   wrapper.classList.remove("modalAnimado");
    document.querySelector("body").style.overflowY = "auto";
-})
+}
 
-btnFechar2.addEventListener("click", () => {
-   if (modal2.classList.contains("visible")) {
-      modal2.classList.add("fechaModal");
-      setTimeout(() => { modal2.classList.remove("visible") }, 1000)
-   }
-   wrapper2.classList.remove("modalAnimado");
-   document.querySelector("body").style.overflowY = "auto";
-})
-
-
+btnFechar1.addEventListener("click", () => fecharModalBtn(modal1, wrapper1))
+btnFechar2.addEventListener("click", () => fecharModalBtn(modal2, wrapper2))
+btnFechar3.addEventListener("click", () => fecharModalBtn(modal3, wrapper3))
