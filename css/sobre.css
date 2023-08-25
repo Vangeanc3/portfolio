@@ -119,13 +119,13 @@
 
 .sobre-mobile-h2{
     font-size: 2.6rem;
-    transform: translateY(-6rem);
+    transform: translateY(-3rem);
     font-family: "Lato";
 }
 
 .sobre-mobile-p{
     width: 90vw;
-    transform: translateY(-5rem);
+    transform: translateY(-2rem);
 }
 
 .sobre-mobile-p p{
@@ -135,8 +135,7 @@
 
 .sobre-btn-mobile{
     padding: 10px;
-    transform: translateY(-3rem);
-    margin: 0 auto 0 auto;
+    margin: 0 auto 3rem auto;
     background-color: #1a1717;
     border: solid 2px white;
     color: #fff;
