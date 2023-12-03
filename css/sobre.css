@@ -23,18 +23,20 @@
 }
 
 .sobre-mobile-img {
+    margin-top: 2rem;
     height: 35rem;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
 .sobre-mobile-h2 {
     font-size: 2.6rem;
-    transform: translateY(-3rem);
+    margin-top: 1rem;
     font-family: "Lato";
 }
 
 .sobre-mobile-p {
     width: 90vw;
-    transform: translateY(-2rem);
+    margin-top: 1rem;
 }
 
 .sobre-mobile-p p {
@@ -44,7 +46,7 @@
 
 .sobre-btn-mobile {
     padding: 10px;
-    margin: 0 auto 3rem auto;
+    margin: 1rem auto 3rem auto;
     background-color: #1a1717;
     border: solid 2px white;
     color: #fff;
